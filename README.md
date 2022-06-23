@@ -36,4 +36,4 @@ _Live Example: https://svelte.vercel.app_
 ## Credits
 
 This demo has been developed with a huge help by my elder brother [Luca Rossi](https://www.linkedin.com/in/lucaronin/).
-In addition to being an amazing brother, Luca authors [Refactoring](https://refactoring.club/), a great newsletter on Engineering management and leadership. You should definitely have a look at it!
+In addition to being an amazing brother Luca is the author of [Refactoring](https://refactoring.club/), a top-notch newsletter on Engineering management and leadership. You should definitely have a look at it!
