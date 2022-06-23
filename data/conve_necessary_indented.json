@@ -1,0 +1,2360 @@
+[
+    {
+        "model": "ConvE",
+        "dataset": "FB15k",
+        "scenario": "necessary",
+        "explained_predictions": [
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Porco Rosso",
+                        "description": "1992 film",
+                        "id": "/m/016ztl"
+                    },
+                    "relation": "is a film from country",
+                    "original_relation_name": "/film/film/country",
+                    "tail": {
+                        "entity": "Japan",
+                        "description": "Country in East Asia",
+                        "id": "/m/03_3d"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Porco Rosso",
+                                "description": "1992 film",
+                                "id": "/m/016ztl"
+                            },
+                            "relation": "is a film available in language",
+                            "original_relation_name": "/film/film/language",
+                            "tail": {
+                                "entity": "Japanese Language",
+                                "description": "Spoken language",
+                                "id": "/m/03_9r"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 2,
+                    "old_score": 0.734,
+                    "new_score": 0.769,
+                    "note": "in assenza di altra informazione, usa la lingua per dedurre il paese di un film"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Andrew W.K.",
+                        "description": "American singer",
+                        "id": "/m/0232lm"
+                    },
+                    "relation": "is a music artist for the record label",
+                    "original_relation_name": "/music/artist/label",
+                    "tail": {
+                        "entity": "Universal Music Group",
+                        "description": "Music company",
+                        "id": "/m/01dtcb"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Universal Music Group",
+                                "description": "Music company",
+                                "id": "/m/01dtcb"
+                            },
+                            "relation": "is the record label of the artist",
+                            "original_relation_name": "/music/record_label/artist",
+                            "tail": {
+                                "entity": "Andrew W.K.",
+                                "description": "American singer",
+                                "id": "/m/0232lm"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 6,
+                    "old_score": 0.755,
+                    "new_score": 0.054,
+                    "note": "classico fatto inverso di FB15k"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Timothy Spall",
+                        "description": "Actor",
+                        "id": "/m/05kwx2"
+                    },
+                    "relation": "is an actor that has performed in film",
+                    "original_relation_name": "/film/actor/film./film/performance/film",
+                    "tail": {
+                        "entity": "Secrets & Lies",
+                        "description": "1996 film",
+                        "id": "/m/02wk7b"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Secrets & Lies",
+                                "description": "1996 film",
+                                "id": "/m/02wk7b"
+                            },
+                            "relation": "is a film starring the actor",
+                            "original_relation_name": "/film/film/starring./film/performance/actor",
+                            "tail": {
+                                "entity": "Timothy Spall",
+                                "description": "Actor",
+                                "id": "/m/05kwx2"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Timothy Spall",
+                                "description": "Actor",
+                                "id": "/m/05kwx2"
+                            },
+                            "relation": "was nominated for an award thanks to this work",
+                            "original_relation_name": "/award/award_nominee/award_nominations./award/award_nomination/nominated_for",
+                            "tail": {
+                                "entity": "Secrets & Lies",
+                                "description": "1996 film",
+                                "id": "/m/02wk7b"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 90,
+                    "note": "la predizione \u00e8 abilitata dal classico fatto inverso di FB15k, e dall\'indizio addizionale della nomination"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "The Gathering Storm",
+                        "description": "Television film",
+                        "id": "/m/05z43v"
+                    },
+                    "relation": "is a film starring the actor",
+                    "original_relation_name": "/film/film/starring./film/performance/actor",
+                    "tail": {
+                        "entity": "Albert Finney",
+                        "description": "Actor",
+                        "id": "/m/0b_dy"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "The Gathering Storm",
+                                "description": "Television film",
+                                "id": "/m/05z43v"
+                            },
+                            "relation": "is a work for which this artist was nominated for an award",
+                            "original_relation_name": "/award/award_nominated_work/award_nominations./award/award_nomination/award_nominee",
+                            "tail": {
+                                "entity": "Albert Finney",
+                                "description": "Actor",
+                                "id": "/m/0b_dy"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "The Gathering Storm",
+                                "description": "Television film",
+                                "id": "/m/05z43v"
+                            },
+                            "relation": "is a work thanks to which this artist won an award",
+                            "original_relation_name": "/award/award_winning_work/awards_won./award/award_honor/award_winner",
+                            "tail": {
+                                "entity": "Albert Finney",
+                                "description": "Actor",
+                                "id": "/m/0b_dy"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 4,
+                    "old_score": 0.564,
+                    "new_score": 0.021,
+                    "note": "la predizione qui non \u00e8 abilitata da fatti inversi, ma dal fatto che l\'attore \u00e8 stato nominato e ha vinto premi per quel film"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Morgan Creek Entertainment",
+                        "description": "Film company",
+                        "id": "/m/031rp3"
+                    },
+                    "relation": "is the employer of the person",
+                    "original_relation_name": "/business/employer/employees./business/employment_tenure/person",
+                    "tail": {
+                        "entity": "James G. Robinson",
+                        "description": "Film producer",
+                        "id": "/m/03qncl3"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "James G. Robinson",
+                                "description": "Film producer",
+                                "id": "/m/03qncl3"
+                            },
+                            "relation": "is a founder of the organization",
+                            "original_relation_name": "/organization/organization_founder/organizations_founded",
+                            "tail": {
+                                "entity": "Morgan Creek Entertainment",
+                                "description": "Film company",
+                                "id": "/m/031rp3"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "James G. Robinson",
+                                "description": "Film producer",
+                                "id": "/m/03qncl3"
+                            },
+                            "relation": "is a member of the board of the organization",
+                            "original_relation_name": "/business/board_member/organization_board_memberships./organization/organization_board_membership/organization",
+                            "tail": {
+                                "entity": "Morgan Creek Entertainment",
+                                "description": "Film company",
+                                "id": "/m/031rp3"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "James G. Robinson",
+                                "description": "Film producer",
+                                "id": "/m/03qncl3"
+                            },
+                            "relation": "has been an employee for",
+                            "original_relation_name": "/people/person/employment_history./business/employment_tenure/company",
+                            "tail": {
+                                "entity": "Morgan Creek Entertainment",
+                                "description": "Film company",
+                                "id": "/m/031rp3"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 5,
+                    "old_score": 0.797,
+                    "new_score": 0.033,
+                    "note": "Oltre al fatto inverso, la predizione qui \u00e8 abilitata da vari indizi aggiuntivi: la persona \u00e8 impiegata nell\'azienda perch\u00e9 l\'ha fondata ed \u00e8 nel suo board"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Glenn Ford",
+                        "description": "Canadian-American actor",
+                        "id": "/m/02_01w"
+                    },
+                    "relation": "is a celebrity with a romantic relationship with",
+                    "original_relation_name": "/celebrities/celebrity/sexual_relationships./celebrities/romantic_relationship/celebrity",
+                    "tail": {
+                        "entity": "Laraine Day",
+                        "description": "American actress",
+                        "id": "/m/08b8vd"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Laraine Day",
+                                "description": "American actress",
+                                "id": "/m/08b8vd"
+                            },
+                            "relation": "is a celebrity with a romantic relationship with",
+                            "original_relation_name": "/celebrities/celebrity/sexual_relationships./celebrities/romantic_relationship/celebrity",
+                            "tail": {
+                                "entity": "Glenn Ford",
+                                "description": "Canadian-American actor",
+                                "id": "/m/02_01w"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Glenn Ford",
+                                "description": "Canadian-American actor",
+                                "id": "/m/02_01w"
+                            },
+                            "relation": "dated",
+                            "original_relation_name": "/base/popstra/celebrity/dated./base/popstra/dated/participant",
+                            "tail": {
+                                "entity": "Laraine Day",
+                                "description": "American actress",
+                                "id": "/m/08b8vd"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Laraine Day",
+                                "description": "American actress",
+                                "id": "/m/08b8vd"
+                            },
+                            "relation": "dated",
+                            "original_relation_name": "/base/popstra/celebrity/dated./base/popstra/dated/participant",
+                            "tail": {
+                                "entity": "Glenn Ford",
+                                "description": "Canadian-American actor",
+                                "id": "/m/02_01w"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 505,
+                    "old_score": 0.504,
+                    "new_score": 0.001,
+                    "note": "Oltre al fatto simmetrico, c\'\u00e8 anche la relazione <<dated>> che \u00e8 largamente sovrapposta e d\u00e0 ulteriori indizi (e quindi va rimosso tutto per disabilitare la predizione)"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Jule Styne",
+                        "description": "English-American songwriter",
+                        "id": "/m/01r6jt2"
+                    },
+                    "relation": "lived in",
+                    "original_relation_name": "/people/person/places_lived./people/place_lived/location",
+                    "tail": {
+                        "entity": "London",
+                        "description": "Capital of England",
+                        "id": "/m/0b1t1"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "London",
+                                "description": "Capital of England",
+                                "id": "/m/0b1t1"
+                            },
+                            "relation": "is the location where this person was born",
+                            "original_relation_name": "/location/location/people_born_here",
+                            "tail": {
+                                "entity": "Jule Styne",
+                                "description": "English-American songwriter",
+                                "id": "/m/01r6jt2"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Jule Styne",
+                                "description": "English-American songwriter",
+                                "id": "/m/01r6jt2"
+                            },
+                            "relation": "is a music artist from",
+                            "original_relation_name": "/music/artist/origin",
+                            "tail": {
+                                "entity": "London",
+                                "description": "Capital of England",
+                                "id": "/m/0b1t1"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Jule Styne",
+                                "description": "English-American songwriter",
+                                "id": "/m/01r6jt2"
+                            },
+                            "relation": "was born in",
+                            "original_relation_name": "/people/person/place_of_birth",
+                            "tail": {
+                                "entity": "London",
+                                "description": "Capital of England",
+                                "id": "/m/0b1t1"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 2,
+                    "old_score": 0.915,
+                    "new_score": 0.467,
+                    "note": "\u00e8 vissuto a Londra perch\u00e9 ci \u00e8 nato (detto in molti modi sovrapposti tra loro)"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "The Chicks",
+                        "description": "Musical band",
+                        "id": "/m/018ndc"
+                    },
+                    "relation": "was nominated for",
+                    "original_relation_name": "/award/award_nominee/award_nominations./award/award_nomination/award",
+                    "tail": {
+                        "entity": "Grammy Award For Best Country Performance By A Duo Or Group With Vocal",
+                        "description": "Award",
+                        "id": "/m/026mff"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Grammy Award For Best Country Performance By A Duo Or Group With Vocal",
+                                "description": "Award",
+                                "id": "/m/026mff"
+                            },
+                            "relation": "is an award for which a nominee was",
+                            "original_relation_name": "/award/award_category/nominees./award/award_nomination/award_nominee",
+                            "tail": {
+                                "entity": "The Chicks",
+                                "description": "Musical band",
+                                "id": "/m/018ndc"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Grammy Award For Best Country Performance By A Duo Or Group With Vocal",
+                                "description": "Award",
+                                "id": "/m/026mff"
+                            },
+                            "relation": "is an award won by",
+                            "original_relation_name": "/award/award_category/winners./award/award_honor/award_winner",
+                            "tail": {
+                                "entity": "The Chicks",
+                                "description": "Musical band",
+                                "id": "/m/018ndc"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "The Chicks",
+                                "description": "Musical band",
+                                "id": "/m/018ndc"
+                            },
+                            "relation": "was nominated for",
+                            "original_relation_name": "/award/award_nominee/award_nominations./award/award_nomination/award",
+                            "tail": {
+                                "entity": "Grammy Award For Record Of The Year",
+                                "description": "Honor",
+                                "id": "/m/01bgqh"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Grammy Award For Best Country Instrumental Performance",
+                                "description": "Award",
+                                "id": "/m/026mg3"
+                            },
+                            "relation": "is an award for which a nominee was",
+                            "original_relation_name": "/award/award_category/nominees./award/award_nomination/award_nominee",
+                            "tail": {
+                                "entity": "The Chicks",
+                                "description": "Musical band",
+                                "id": "/m/018ndc"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 3,
+                    "old_score": 0.87,
+                    "new_score": 0.366,
+                    "note": "I The Chicks sono stati nominati per quel premio; oltre al fatto inverso, altri indizi vengono dal fatto che i The Chicks hanno vinto quel premio, e dal fatto che hanno ricevuto nomination per premi simili"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Arthur Freed",
+                        "description": "American lyricist",
+                        "id": "/m/01gz9n"
+                    },
+                    "relation": "won an award thanks to this work",
+                    "original_relation_name": "/award/award_winner/awards_won./award/award_honor/honored_for",
+                    "tail": {
+                        "entity": "An American In Paris",
+                        "description": "1951 film",
+                        "id": "/m/05dmmc"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Arthur Freed",
+                                "description": "American lyricist",
+                                "id": "/m/01gz9n"
+                            },
+                            "relation": "has been the producer of film",
+                            "original_relation_name": "/film/producer/film",
+                            "tail": {
+                                "entity": "An American In Paris",
+                                "description": "1951 film",
+                                "id": "/m/05dmmc"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "An American In Paris",
+                                "description": "1951 film",
+                                "id": "/m/05dmmc"
+                            },
+                            "relation": "is a work thanks to which this artist won an award",
+                            "original_relation_name": "/award/award_winning_work/awards_won./award/award_honor/award_winner",
+                            "tail": {
+                                "entity": "Arthur Freed",
+                                "description": "American lyricist",
+                                "id": "/m/01gz9n"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "An American In Paris",
+                                "description": "1951 film",
+                                "id": "/m/05dmmc"
+                            },
+                            "relation": "is a work for which this artist was nominated for an award",
+                            "original_relation_name": "/award/award_nominated_work/award_nominations./award/award_nomination/award_nominee",
+                            "tail": {
+                                "entity": "Arthur Freed",
+                                "description": "American lyricist",
+                                "id": "/m/01gz9n"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Arthur Freed",
+                                "description": "American lyricist",
+                                "id": "/m/01gz9n"
+                            },
+                            "relation": "was nominated for an award thanks to this work",
+                            "original_relation_name": "/award/award_nominee/award_nominations./award/award_nomination/nominated_for",
+                            "tail": {
+                                "entity": "An American In Paris",
+                                "description": "1951 film",
+                                "id": "/m/05dmmc"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 2,
+                    "old_score": 0.777,
+                    "new_score": 0.093,
+                    "note": "oltre al fatto inverso, ci sono gli indizi che ha prodotto quel film e che ha ricevuto nomination per quel film"
+                }
+            }
+        ]
+    },
+    {
+        "model": "ConvE",
+        "dataset": "WN18",
+        "scenario": "necessary",
+        "explained_predictions": [
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Electrical Engineer",
+                        "description": "A person trained in practical applications of the theory of electricity",
+                        "id": "10049017"
+                    },
+                    "relation": "_instance_hyponym",
+                    "original_relation_name": null,
+                    "tail": {
+                        "entity": "Lee De Forest",
+                        "description": "US electrical engineer who patented the first triode vacuum tube",
+                        "id": "10927424"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Lee De Forest",
+                                "description": "US electrical engineer who patented the first triode vacuum tube",
+                                "id": "10927424"
+                            },
+                            "relation": "_instance_hypernym",
+                            "original_relation_name": null,
+                            "tail": {
+                                "entity": "Electrical Engineer",
+                                "description": "A person trained in practical applications of the theory of electricity",
+                                "id": "10049017"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 275,
+                    "old_score": 0.937,
+                    "new_score": 0.0,
+                    "note": "la spiegazione \u00e8 un classico fatto inverso di WN18"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "St. Louis",
+                        "description": "The largest city in Missouri",
+                        "id": "09107626"
+                    },
+                    "relation": "_part_of",
+                    "original_relation_name": null,
+                    "tail": {
+                        "entity": "Missouri",
+                        "description": "A midwestern state in central United States",
+                        "id": "09105821"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Missouri",
+                                "description": "A midwestern state in central United States",
+                                "id": "09105821"
+                            },
+                            "relation": "_has_part",
+                            "original_relation_name": null,
+                            "tail": {
+                                "entity": "St. Louis",
+                                "description": "The largest city in Missouri",
+                                "id": "09107626"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 83,
+                    "old_score": 0.932,
+                    "new_score": 0.0,
+                    "note": "la spiegazione \u00e8 un classico fatto inverso di WN18"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Domed Stadium",
+                        "description": "a stadium that has a roof",
+                        "id": "03220692"
+                    },
+                    "relation": "_hypernym",
+                    "original_relation_name": null,
+                    "tail": {
+                        "entity": "Stadium",
+                        "description": "A large structure for open-air sports or entertainments",
+                        "id": "04295881"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Stadium",
+                                "description": "A large structure for open-air sports or entertainments",
+                                "id": "04295881"
+                            },
+                            "relation": "_hyponym",
+                            "original_relation_name": null,
+                            "tail": {
+                                "entity": "Domed Stadium",
+                                "description": "A stadium that has a roof",
+                                "id": "03220692"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 34439,
+                    "old_score": 0.964,
+                    "new_score": 0.0,
+                    "note": "la spiegazione \u00e8 un classico fatto inverso di WN18"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "To Snigger",
+                        "description": "To laugh quietly",
+                        "id": "00030010"
+                    },
+                    "relation": "_derivationally_related_form",
+                    "original_relation_name": null,
+                    "tail": {
+                        "entity": "To Snort",
+                        "description": "To laugh in a disrespectful way",
+                        "id": "07128060"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "To Snort",
+                                "description": "To laugh in a disrespectful way",
+                                "id": "07128060"
+                            },
+                            "relation": "_derivationally_related_form",
+                            "original_relation_name": null,
+                            "tail": {
+                                "entity": "To Snigger",
+                                "description": "To laugh quietly",
+                                "id": "00030010"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "To Snigger",
+                                "description": "To laugh quietly",
+                                "id": "00030010"
+                            },
+                            "relation": "_hypernym",
+                            "original_relation_name": null,
+                            "tail": {
+                                "entity": "To Laugh",
+                                "description": "To produce laughter",
+                                "id": "00031820"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 12,
+                    "old_score": 0.963,
+                    "new_score": 0.0,
+                    "note": "\u00e8 interessante perch\u00e9 sono due indizi distinti: da un lato c\'\u00e8 il collegamento simmetrico (banale); dall\'altro sia Snigger che Snort hanno come hypernym <<laugh>> e quindi il fatto inverso da solo non basta come spiegazione necessaria"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Optical Instrument",
+                        "description": "An instrument designed to aid vision",
+                        "id": "03852280"
+                    },
+                    "relation": "_has_part",
+                    "original_relation_name": null,
+                    "tail": {
+                        "entity": "Lense",
+                        "description": "A transparent optical device used to converge or diverge light",
+                        "id": "03656484"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Lense",
+                                "description": "A transparent optical device used to converge or diverge light",
+                                "id": "03656484"
+                            },
+                            "relation": "_part_of",
+                            "original_relation_name": null,
+                            "tail": {
+                                "entity": "Optical Instrument",
+                                "description": "An instrument designed to aid vision",
+                                "id": "03852280"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Opera Glasses",
+                                "description": "An optical instrument designed for simultaneous use by both eyes",
+                                "id": "02841315"
+                            },
+                            "relation": "_hypernym",
+                            "original_relation_name": null,
+                            "tail": {
+                                "entity": "Optical Instrument",
+                                "description": "An instrument designed to aid vision",
+                                "id": "03852280"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 1236,
+                    "old_score": 0.912,
+                    "new_score": 0.0,
+                    "note": "\u00e8 interessante perch\u00e9 sono due indizi distinti: da un lato c\'\u00e8 il collegamento inverso (banale). Dall\'altro gli opera_glasses (che hanno _has_part lenses) hanno come _hypernym optical_instrument. Quindi ha imparato un pattern."
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Iodine",
+                        "description": "A nonmetallic element belonging to the halogens",
+                        "id": "14641397"
+                    },
+                    "relation": "_derivationally_related_form",
+                    "original_relation_name": null,
+                    "tail": {
+                        "entity": "To Iodinate",
+                        "description": "To cause to combine with iodine",
+                        "id": "00520881"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "To Iodinate",
+                                "description": "To cause to combine with iodine",
+                                "id": "00520881"
+                            },
+                            "relation": "_derivationally_related_form",
+                            "original_relation_name": null,
+                            "tail": {
+                                "entity": "Iodine",
+                                "description": "A nonmetallic element belonging to the halogens",
+                                "id": "14641397"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "To Iodize",
+                                "description": "To treat with iodine",
+                                "id": "00184907"
+                            },
+                            "relation": "_derivationally_related_form",
+                            "original_relation_name": null,
+                            "tail": {
+                                "entity": "Iodine",
+                                "description": "A nonmetallic element belonging to the halogens",
+                                "id": "14641397"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Iodine",
+                                "description": "A nonmetallic element belonging to the halogens",
+                                "id": "14641397"
+                            },
+                            "relation": "_derivationally_related_form",
+                            "original_relation_name": null,
+                            "tail": {
+                                "entity": "To Iodize",
+                                "description": "To treat with iodine",
+                                "id": "00184907"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 17489,
+                    "old_score": 0.83,
+                    "new_score": 0.0,
+                    "note": "\u00e8 interessante perch\u00e9 \u00e8 una clique"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "House Of York",
+                        "description": "An English royal house",
+                        "id": "08159924"
+                    },
+                    "relation": "_hypernym",
+                    "original_relation_name": null,
+                    "tail": {
+                        "entity": "Dynasty",
+                        "description": "A sequence of powerful leaders in the same family",
+                        "id": "07971582"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Dynasty",
+                                "description": "A sequence of powerful leaders in the same family",
+                                "id": "07971582"
+                            },
+                            "relation": "_hyponym",
+                            "original_relation_name": null,
+                            "tail": {
+                                "entity": "House Of York",
+                                "description": "An English royal house",
+                                "id": "08159924"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Royalty",
+                                "description": "Royal persons collectively",
+                                "id": "08153437"
+                            },
+                            "relation": "_hyponym",
+                            "original_relation_name": null,
+                            "tail": {
+                                "entity": "House Of York",
+                                "description": "An English royal house",
+                                "id": "08159924"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "House Of York",
+                                "description": "An English royal house",
+                                "id": "08159924"
+                            },
+                            "relation": "_hypernym",
+                            "original_relation_name": null,
+                            "tail": {
+                                "entity": "Royalty",
+                                "description": "Royal persons collectively",
+                                "id": "08153437"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 28784,
+                    "old_score": 0.903,
+                    "new_score": 0.0,
+                    "note": "\u00e8 interessante perch\u00e9 anche solo dal fatto che House of York ha il collegamento hyper-hyponym con Royalty lui riesce a capire che ha lo stesso collegamento con Dynasty"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Friend",
+                        "description": "A person you know well and regard with affection and trust",
+                        "id": "09763784"
+                    },
+                    "relation": "_hyponym",
+                    "original_relation_name": null,
+                    "tail": {
+                        "entity": "Sidekick",
+                        "description": "A close friend who accompanies his buddies in their activities",
+                        "id": "09877951"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Sidekick",
+                                "description": "A close friend who accompanies his buddies in their activities",
+                                "id": "09877951"
+                            },
+                            "relation": "_hypernym",
+                            "original_relation_name": null,
+                            "tail": {
+                                "entity": "Friend",
+                                "description": "A person you know well and regard with affection and trust",
+                                "id": "09763784"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Friend",
+                                "description": "A person you know well and regard with affection and trust",
+                                "id": "09763784"
+                            },
+                            "relation": "_hyponym",
+                            "original_relation_name": null,
+                            "tail": {
+                                "entity": "Fellow",
+                                "description": "A friend who is frequently in the company of another",
+                                "id": "09945905"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Intimate",
+                                "description": "Someone to whom private matters are confided",
+                                "id": "00927711"
+                            },
+                            "relation": "_hypernym",
+                            "original_relation_name": null,
+                            "tail": {
+                                "entity": "Friend",
+                                "description": "A person you know well and regard with affection and trust",
+                                "id": "09763784"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Friend",
+                                "description": "A person you know well and regard with affection and trust",
+                                "id": "09763784"
+                            },
+                            "relation": "_hyponym",
+                            "original_relation_name": null,
+                            "tail": {
+                                "entity": "Intimate",
+                                "description": "Someone to whom private matters are confided",
+                                "id": "00927711"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 18273,
+                    "old_score": 0.916,
+                    "new_score": 0.0,
+                    "note": "\u00e8 interessante perch\u00e9 vedendo che friend ha il collegamento hyper-hyponym con intimate e con fellow lui riesce a capire che ha lo stesso collegamento con sidekick (oltre alla presenza del fatto inverso, banale)"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Desert",
+                        "description": "Arid land with little or no vegetation",
+                        "id": "08505573"
+                    },
+                    "relation": "_instance_hyponym",
+                    "original_relation_name": null,
+                    "tail": {
+                        "entity": "Libyan Desert",
+                        "description": "The northeastern part of the Sahara Desert in Libya, Egypt and Sudan",
+                        "id": "09170788"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Desert",
+                                "description": "Arid land with little or no vegetation",
+                                "id": "08505573"
+                            },
+                            "relation": "_instance_hyponym",
+                            "original_relation_name": null,
+                            "tail": {
+                                "entity": "Nubian Desert",
+                                "description": "An arid sandstone plateau in northeastern Sudan",
+                                "id": "09171674"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Desert",
+                                "description": "Arid land with little or no vegetation",
+                                "id": "08505573"
+                            },
+                            "relation": "_instance_hyponym",
+                            "original_relation_name": null,
+                            "tail": {
+                                "entity": "Kalahari Desert",
+                                "description": "A desert in southwestern Africa - largely in Botswana",
+                                "id": "09170294"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Desert",
+                                "description": "Arid land with little or no vegetation",
+                                "id": "08505573"
+                            },
+                            "relation": "_instance_hyponym",
+                            "original_relation_name": null,
+                            "tail": {
+                                "entity": "Kavir Desert",
+                                "description": "A salt desert in north central Iran",
+                                "id": "09169038"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Desert",
+                                "description": "Arid land with little or no vegetation",
+                                "id": "08505573"
+                            },
+                            "relation": "_instance_hyponym",
+                            "original_relation_name": null,
+                            "tail": {
+                                "entity": "Nefud",
+                                "description": "A desert in northern Saudi Arabia",
+                                "id": "09171376"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 5,
+                    "old_score": 0.949,
+                    "new_score": 0.942,
+                    "note": "\u00e8 interessante perch\u00e9 \u00e8 uno dei rari casi in WN18 dove una deduzione dipende da tanti esempi simili: ragiona per analogia"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Port",
+                        "description": "A place (seaport or airport) where people and merchandise can enter or leave a country",
+                        "id": "08633957"
+                    },
+                    "relation": "_instance_hyponym",
+                    "original_relation_name": null,
+                    "tail": {
+                        "entity": "Riga",
+                        "description": "The capital and largest city of Latvia",
+                        "id": "09013353"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Port",
+                                "description": "A place (seaport or airport where people and merchandise can enter or leave a country",
+                                "id": "08633957"
+                            },
+                            "relation": "_instance_hyponym",
+                            "original_relation_name": null,
+                            "tail": {
+                                "entity": "Lisbon",
+                                "description": "Capital and largest city of Portugal",
+                                "id": "08986066"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Port",
+                                "description": "a place (seaport or airport where people and merchandise can enter or leave a country",
+                                "id": "08633957"
+                            },
+                            "relation": "_instance_hyponym",
+                            "original_relation_name": null,
+                            "tail": {
+                                "entity": "El Qahira",
+                                "description": "capital of Egypt and the largest city in Africa",
+                                "id": "08898633"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Port",
+                                "description": "A place (seaport or airport where people and merchandise can enter or leave a country",
+                                "id": "08633957"
+                            },
+                            "relation": "_instance_hyponym",
+                            "original_relation_name": null,
+                            "tail": {
+                                "entity": "Gdansk",
+                                "description": "A port city of northern Poland",
+                                "id": "08983742"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Port",
+                                "description": "A place (seaport or airport where people and merchandise can enter or leave a country",
+                                "id": "08633957"
+                            },
+                            "relation": "_instance_hyponym",
+                            "original_relation_name": null,
+                            "tail": {
+                                "entity": "Hanover",
+                                "description": "A port city in northwestern Germany",
+                                "id": "08773679"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 3,
+                    "old_score": 0.918,
+                    "new_score": 0.933,
+                    "note": "\u00e8 interessante perch\u00e9 \u00e8 uno dei rari casi in WN18 dove una deduzione dipende da tanti esempi simili"
+                }
+            }
+        ]
+    },
+    {
+        "model": "ConvE",
+        "dataset": "FB15k-237",
+        "scenario": "necessary",
+        "explained_predictions": [
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Primetime Emmy Award For Outstanding Writing For A Variety Series",
+                        "description": "Award",
+                        "id": "/m/047byns"
+                    },
+                    "relation": "belongs to the award category",
+                    "original_relation_name": null,
+                    "tail": {
+                        "entity": "Primetime Emmy Awards",
+                        "description": "Award category",
+                        "id": "/m/0gcf2r"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Primetime Emmy Award For Outstanding Writing For A Variety Series",
+                                "description": "Award",
+                                "id": "/m/047byns"
+                            },
+                            "relation": "is an award whose instances were given in this ceremony",
+                            "original_relation_name": null,
+                            "tail": {
+                                "entity": "60th Primetime Emmy Awards",
+                                "description": "Award ceremony",
+                                "id": "/m/03nnm4t"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 2,
+                    "old_score": 0.919,
+                    "new_score": 0.786,
+                    "note": "il premio \u00e8 un Primetime Emmy Award perch\u00e9 \u00e8 stato distribuito in una cerimonia dei Primetime Grammy Awards"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Aya Hisakawa",
+                        "description": "Japanese voice actress",
+                        "id": "/m/0392kz"
+                    },
+                    "relation": "is an actor that has performed in film",
+                    "original_relation_name": null,
+                    "tail": {
+                        "entity": "Sailor Moon Super S: The Movie",
+                        "description": "1995 film",
+                        "id": "/m/0cks1m"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Aya Hisakawa",
+                                "description": "Japanese voice actress",
+                                "id": "/m/0392kz"
+                            },
+                            "relation": "is an actor that has performed in film",
+                            "original_relation_name": null,
+                            "tail": {
+                                "entity": "Sailor Moon R The Movie: Promise Of The Rose",
+                                "description": "1993 film",
+                                "id": "/m/0ckr7s"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 5,
+                    "old_score": 0.222,
+                    "new_score": 0.084,
+                    "note": "l\'attrice ha doppiato il film Sailor Moon Super S perch\u00e9 ha doppiato anche un altro film dello stesso franchise poco prima(e quindi realisticamente hanno partecipato tutti gli stessi doppiatori)"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Bend It Like Beckham",
+                        "description": "2002 film",
+                        "id": "/m/01l2b3"
+                    },
+                    "relation": "is a film of genre",
+                    "original_relation_name": null,
+                    "tail": {
+                        "entity": "Comedy-Drama",
+                        "description": "Literary genre",
+                        "id": "/m/01t_vv"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Searchlight Pictures",
+                                "description": "Film studio",
+                                "id": "/m/025jfl"
+                            },
+                            "relation": "have distributed the film",
+                            "original_relation_name": null,
+                            "tail": {
+                                "entity": "Bend It Like Beckham",
+                                "description": "2002 film",
+                                "id": "/m/01l2b3"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 2,
+                    "old_score": 0.632,
+                    "new_score": 0.573,
+                    "note": "Searchlight Pictures \u00e8 una sussidiaria di Disney specializzata in <<specialty films>> che spesso sono Comedy-drama"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Hip Hop Music",
+                        "description": "Musical genre",
+                        "id": "/m/0glt670"
+                    },
+                    "relation": "is the music genre of the artist",
+                    "original_relation_name": null,
+                    "tail": {
+                        "entity": "Kelis",
+                        "description": "American singer-songwriter",
+                        "id": "/m/01vxlbm"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Hip Hop Music",
+                                "description": "Musical genre",
+                                "id": "/m/0glt670"
+                            },
+                            "relation": "is the music genre of the artist",
+                            "original_relation_name": null,
+                            "tail": {
+                                "entity": "Raphael Saadiq",
+                                "description": "American singer",
+                                "id": "/m/01w272y"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 7,
+                    "old_score": 0.889,
+                    "new_score": 0.906,
+                    "note": "Kelis e Raphael Saadiq hanno fatto spesso cose insieme(Controllare nel dataset quanto spesso)"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "The Sessions",
+                        "description": "2012 film",
+                        "id": "/m/0gyfp9c"
+                    },
+                    "relation": "is a film that was released in region",
+                    "original_relation_name": null,
+                    "tail": {
+                        "entity": "Serbia",
+                        "description": "Country in the Balkans",
+                        "id": "/m/077qn"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "The Sessions",
+                                "description": "2012 film",
+                                "id": "/m/0gyfp9c"
+                            },
+                            "relation": "is a film that was released in region",
+                            "original_relation_name": null,
+                            "tail": {
+                                "entity": "Croatia",
+                                "description": "Country in the Balkans",
+                                "id": "/m/01pj7"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 8,
+                    "old_score": 0.938,
+                    "new_score": 0.802,
+                    "note": "predice che \u00e8 stato rilasciato in Serbia perch\u00e9 \u00e8 stato rilasciato anche negli altri paesi vicini"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Walter Parkes",
+                        "description": "American producer",
+                        "id": "/m/05prs8"
+                    },
+                    "relation": "has profession",
+                    "original_relation_name": null,
+                    "tail": {
+                        "entity": "Screenwriter",
+                        "description": "Profession",
+                        "id": "/m/0dxtg"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Walter Parkes",
+                                "description": "American producer",
+                                "id": "/m/05prs8"
+                            },
+                            "relation": "has profession",
+                            "original_relation_name": null,
+                            "tail": {
+                                "entity": "Television Producer",
+                                "description": "TV producer type",
+                                "id": "/m/03gjzk"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Walter Parkes",
+                                "description": "American producer",
+                                "id": "/m/05prs8"
+                            },
+                            "relation": "won the same award as",
+                            "original_relation_name": null,
+                            "tail": {
+                                "entity": "John Logan",
+                                "description": "American screenwriter",
+                                "id": "/m/05183k"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 2,
+                    "old_score": 0.839,
+                    "new_score": 0.599,
+                    "note": "gli indizi che Walter Parkes sia uno Screenwriter sono che ha prodotto cose per la TV (e spesso nel dataset chi produce \u00e8 anche chi scrive) e perch\u00e9 ha vinto gli stessi premi di altri screenwriters"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Grammy Award For Best Contemporary Jazz Album",
+                        "description": "Award",
+                        "id": "/m/03ncb2"
+                    },
+                    "relation": "is an award whose instances are given in this ceremony",
+                    "original_relation_name": null,
+                    "tail": {
+                        "entity": "41st Annual Grammy Awards",
+                        "description": "Award ceremony",
+                        "id": "/m/01c6qp"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Grammy Award For Best Contemporary Jazz Album",
+                                "description": "Award",
+                                "id": "/m/03ncb2"
+                            },
+                            "relation": "is an award whose instances are given in this ceremony",
+                            "original_relation_name": null,
+                            "tail": {
+                                "entity": "35th Annual Grammy Awards",
+                                "description": "Award ceremony",
+                                "id": "/m/01xqqp"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Grammy Award For Best Contemporary Jazz Album",
+                                "description": "Award",
+                                "id": "/m/03ncb2"
+                            },
+                            "relation": "is an award whose instances are given in this ceremony",
+                            "original_relation_name": null,
+                            "tail": {
+                                "entity": "45th Annual Grammy Awards",
+                                "description": "Award ceremony",
+                                "id": "/m/019bk0"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Grammy Award For Best Contemporary Jazz Album",
+                                "description": "Award",
+                                "id": "/m/03ncb2"
+                            },
+                            "relation": "is an award whose instances are given in this ceremony",
+                            "original_relation_name": null,
+                            "tail": {
+                                "entity": "48th Annual Grammy Awards",
+                                "description": "Award ceremony",
+                                "id": "/m/09n4nb"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Grammy Award For Best Contemporary Jazz Album",
+                                "description": "Award",
+                                "id": "/m/03ncb2"
+                            },
+                            "relation": "is an award whose instances are given in this ceremony",
+                            "original_relation_name": null,
+                            "tail": {
+                                "entity": "51st Annual Grammy Awards",
+                                "description": "Award ceremony",
+                                "id": "/m/0466p0j"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 2,
+                    "old_score": 0.918,
+                    "new_score": 0.939,
+                    "note": "il premio \u00e8 stato distribuito in una cerimonia dei Grammy perch\u00e9 \u00e8 stato distribuito anche in altre cerimonie dei Grammy (e quindi \u00e8 un Grammy, anche se il fatto che sia un Grammy \u00e8 mancante)"
+                }
+            }
+        ]
+    },
+    {
+        "model": "ConvE",
+        "dataset": "WN18RR",
+        "scenario": "necessary",
+        "explained_predictions": [
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Sensitive",
+                        "description": "Able to feel or perceive",
+                        "id": "02102484"
+                    },
+                    "relation": "_derivationally_related_form",
+                    "original_relation_name": null,
+                    "tail": {
+                        "entity": "To Sense",
+                        "description": "To perceive by a physical sensation",
+                        "id": "02106006"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "To Sense",
+                                "description": "To perceive by a physical sensation",
+                                "id": "02106006"
+                            },
+                            "relation": "_derivationally_related_form",
+                            "original_relation_name": null,
+                            "tail": {
+                                "entity": "Sensitive",
+                                "description": "Able to feel or perceive",
+                                "id": "02102484"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 8,
+                    "old_score": 0.974,
+                    "new_score": 0.017,
+                    "note": "classica relazione simmetrica di WN18RR"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Lepidopterologist",
+                        "description": "An entomologist who specializes in butterflies and moths",
+                        "id": "10254761"
+                    },
+                    "relation": "_derivationally_related_form",
+                    "original_relation_name": null,
+                    "tail": {
+                        "entity": "Lepidoptery",
+                        "description": "the branch of entomology dealing with Lepidoptera",
+                        "id": "06072476"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Lepidoptery",
+                                "description": "the branch of entomology dealing with Lepidoptera",
+                                "id": "06072476"
+                            },
+                            "relation": "_derivationally_related_form",
+                            "original_relation_name": null,
+                            "tail": {
+                                "entity": "Lepidopterologist",
+                                "description": "An entomologist who specializes in butterflies and moths",
+                                "id": "10254761"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 2,
+                    "note": "classica relazione simmetrica di WN18RR"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Sadhe",
+                        "description": "The 18th letter of the Hebrew alphabet",
+                        "id": "06838543"
+                    },
+                    "relation": "_hypernym",
+                    "original_relation_name": null,
+                    "tail": {
+                        "entity": "Letter Of The Alphabet",
+                        "description": "The conventional characters of the alphabet used to represent speech",
+                        "id": "06828818"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Hebrew Script",
+                                "description": "Semitic alphabet used since the 5th century BC for the Hebrew language",
+                                "id": "06498569"
+                            },
+                            "relation": "_has_part",
+                            "original_relation_name": null,
+                            "tail": {
+                                "entity": "Sadhe",
+                                "description": "The 18th letter of the Hebrew alphabet",
+                                "id": "06838543"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 9,
+                    "old_score": 0.925,
+                    "new_score": 0.012,
+                    "note": "il carattere sadhe ricade nella categoria <<lettera dell\'alfabeto>> perch\u00e9 \u00e8 un elemento di un alfabeto. Ha senso!"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Descent",
+                        "description": "A movement downward",
+                        "id": "00326440"
+                    },
+                    "relation": "_derivationally_related_form",
+                    "original_relation_name": null,
+                    "tail": {
+                        "entity": "To Go Down",
+                        "description": "To move downward and lower, but not necessarily all the way",
+                        "id": "01970826"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "To Go Down",
+                                "description": "To move downward and lower, but not necessarily all the way",
+                                "id": "01970826"
+                            },
+                            "relation": "_derivationally_related_form",
+                            "original_relation_name": null,
+                            "tail": {
+                                "entity": "Descent",
+                                "description": "a movement downward",
+                                "id": "00326440"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Slide",
+                                "description": "In geology, the descent of a large mass of earth/rocks/snow",
+                                "id": "00328502"
+                            },
+                            "relation": "_hypernym",
+                            "original_relation_name": null,
+                            "tail": {
+                                "entity": "Descent",
+                                "description": "A movement downward",
+                                "id": "00326440"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 8,
+                    "old_score": 0.977,
+                    "new_score": 0.009,
+                    "note": "da un lato c\'\u00e8 il fatto simmetrico; dall\'altro c\'\u00e8 il fatto che descent \u00e8 anche legato a slide (che verosimilmente nel KG \u00e8 a sua volta legato a go_down)"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Elect",
+                        "description": "select by a vote for an office or membership",
+                        "id": "02400760"
+                    },
+                    "relation": "_derivationally_related_form",
+                    "original_relation_name": null,
+                    "tail": {
+                        "entity": "Voter",
+                        "description": "a citizen who has a legal right to vote",
+                        "id": "10760340"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Voter",
+                                "description": "a citizen who has a legal right to vote",
+                                "id": "10760340"
+                            },
+                            "relation": "_derivationally_related_form",
+                            "original_relation_name": null,
+                            "tail": {
+                                "entity": "Elect",
+                                "description": "select by a vote for an office or membership",
+                                "id": "02400760"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Elect",
+                                "description": "select by a vote for an office or membership",
+                                "id": "02400760"
+                            },
+                            "relation": "_derivationally_related_form",
+                            "original_relation_name": null,
+                            "tail": {
+                                "entity": "Election",
+                                "description": "a vote to select the winner of a position or political office",
+                                "id": "00180962"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 6328,
+                    "old_score": 0.844,
+                    "new_score": 0.0,
+                    "note": "da un lato c\'\u00e8 il fatto simmetrico; dall\'altro c\'\u00e8 il fatto che elect \u00e8 anche legato a election (che verosimilmente nel KG \u00e8 a sua volta legato a voter)"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "North Platte River",
+                        "description": "River that rises in northern Colorado",
+                        "id": "09373716"
+                    },
+                    "relation": "_instance_hypernym",
+                    "original_relation_name": null,
+                    "tail": {
+                        "entity": "River",
+                        "description": "A large natural stream of water",
+                        "id": "09411430"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Wyoming",
+                                "description": "A state in the western United States",
+                                "id": "09159003"
+                            },
+                            "relation": "_has_part",
+                            "original_relation_name": null,
+                            "tail": {
+                                "entity": "North Platte River",
+                                "description": "A river that rises in northern Colorado",
+                                "id": "09373716"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Nebraska",
+                                "description": "A state in the mid-western United States",
+                                "id": "09109444"
+                            },
+                            "relation": "_has_part",
+                            "original_relation_name": null,
+                            "tail": {
+                                "entity": "North Platte River",
+                                "description": "A river that rises in northern Colorado",
+                                "id": "09373716"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Colorado",
+                                "description": "A state in western United States",
+                                "id": "09067277"
+                            },
+                            "relation": "_has_part",
+                            "original_relation_name": null,
+                            "tail": {
+                                "entity": "North Platte River",
+                                "description": "A river that rises in northern Colorado",
+                                "id": "09373716"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 6,
+                    "old_score": 0.662,
+                    "new_score": 0.003,
+                    "note": "\u00e8 interessante perch\u00e9 in effetti se un elemento geografico \u00e8 in tanti stati diversi probabilmente \u00e8 un fiume)"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Propaganda",
+                        "description": "Information spread for the purpose of promoting some cause",
+                        "id": "06674542"
+                    },
+                    "relation": "_derivationally_related_form",
+                    "original_relation_name": null,
+                    "tail": {
+                        "entity": "To Propagandize",
+                        "description": "To spread by propaganda",
+                        "id": "00970732"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "To Propagandize",
+                                "description": "To spread by propaganda",
+                                "id": "00970732"
+                            },
+                            "relation": "_derivationally_related_form",
+                            "original_relation_name": null,
+                            "tail": {
+                                "entity": "Propaganda",
+                                "description": "Information spread for the purpose of promoting some cause",
+                                "id": "06674542"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Propagandist",
+                                "description": "A person who disseminates propaganda",
+                                "id": "10482921"
+                            },
+                            "relation": "_derivationally_related_form",
+                            "original_relation_name": null,
+                            "tail": {
+                                "entity": "Propaganda",
+                                "description": "Information spread for the purpose of promoting some cause",
+                                "id": "06674542"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Propaganda",
+                                "description": "Information spread for the purpose of promoting some cause",
+                                "id": "06674542"
+                            },
+                            "relation": "_derivationally_related_form",
+                            "original_relation_name": null,
+                            "tail": {
+                                "entity": "Propagandist",
+                                "description": "A person who disseminates propaganda",
+                                "id": "10482921"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 15802,
+                    "old_score": 0.816,
+                    "new_score": 0.0,
+                    "note": "\u00e8 interessante perch\u00e9 \u00e8 una clique di concetti collegati da _derivationally_related_form"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Trusty",
+                        "description": "Worthy of trust or belief",
+                        "id": "02464693"
+                    },
+                    "relation": "_also_see",
+                    "original_relation_name": null,
+                    "tail": {
+                        "entity": "Reliable",
+                        "description": "Worthy of reliance or trust",
+                        "id": "00724081"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Reliable",
+                                "description": "Worthy of reliance or trust",
+                                "id": "00724081"
+                            },
+                            "relation": "_also_see",
+                            "original_relation_name": null,
+                            "tail": {
+                                "entity": "Trusty",
+                                "description": "Worthy of trust or belief",
+                                "id": "02464693"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Trusty",
+                                "description": "Worthy of trust or belief",
+                                "id": "02464693"
+                            },
+                            "relation": "_also_see",
+                            "original_relation_name": null,
+                            "tail": {
+                                "entity": "Honorable",
+                                "description": "Not disposed to cheat or defraud",
+                                "id": "01222360"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Trusty",
+                                "description": "Worthy of trust or belief",
+                                "id": "02464693"
+                            },
+                            "relation": "_also_see",
+                            "original_relation_name": null,
+                            "tail": {
+                                "entity": "Faithful",
+                                "description": "Steadfast in affection or allegiance",
+                                "id": "00958880"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Trust",
+                                "description": "Complete confidence in a person or plan",
+                                "id": "05943066"
+                            },
+                            "relation": "_derivationally_related_form",
+                            "original_relation_name": null,
+                            "tail": {
+                                "entity": "Trusty",
+                                "description": "Worthy of trust or belief",
+                                "id": "02464693"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 8325,
+                    "old_score": 0.872,
+                    "new_score": 0.0,
+                    "note": "\u00e8 interessante perch\u00e9 \u00e8 una clique di <<sinomimi>> (also_see) e <<concetti collegati>> (_derivationally_related_form))"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "To Spread",
+                        "description": "To cause to become widely known",
+                        "id": "00968211"
+                    },
+                    "relation": "_derivationally_related_form",
+                    "original_relation_name": null,
+                    "tail": {
+                        "entity": "Propagator",
+                        "description": "Someone who spreads the news",
+                        "id": "10483138"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "To Spread",
+                                "description": "To cause to become widely known",
+                                "id": "00968211"
+                            },
+                            "relation": "_derivationally_related_form",
+                            "original_relation_name": null,
+                            "tail": {
+                                "entity": "Broadcast",
+                                "description": "Message that is transmitted by radio or television",
+                                "id": "06254007"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "To Spread",
+                                "description": "To cause to become widely known",
+                                "id": "00968211"
+                            },
+                            "relation": "_derivationally_related_form",
+                            "original_relation_name": null,
+                            "tail": {
+                                "entity": "Propagation",
+                                "description": "The spreading of something",
+                                "id": "11512992"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "To Spread",
+                                "description": "To cause to become widely known",
+                                "id": "00968211"
+                            },
+                            "relation": "_derivationally_related_form",
+                            "original_relation_name": null,
+                            "tail": {
+                                "entity": "Spreading",
+                                "description": "The process or result of distributing something over a wide expanse of space",
+                                "id": "00367976"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "To Spread",
+                                "description": "To cause to become widely known",
+                                "id": "00968211"
+                            },
+                            "relation": "_derivationally_related_form",
+                            "original_relation_name": null,
+                            "tail": {
+                                "entity": "Spreading",
+                                "description": "The act of extending over a wider scope or expanse of space or time",
+                                "id": "00367976"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 3,
+                    "old_score": 0.919,
+                    "new_score": 0.914,
+                    "note": "\u00e8 interessante perch\u00e9 ha capito che spread \u00e8 connesso con propagator attraverso tutta un\'altra serie di connessioni nello stesso verso"
+                }
+            }
+        ]
+    },
+    {
+        "model": "ConvE",
+        "dataset": "YAGO3-10",
+        "scenario": "necessary",
+        "explained_predictions": [
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Mickey Daniels",
+                        "description": "American actor",
+                        "id": "0"
+                    },
+                    "relation": "acted in",
+                    "original_relation_name": null,
+                    "tail": {
+                        "entity": "The Big Show",
+                        "description": "1923 film",
+                        "id": "0"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Mickey Daniels",
+                                "description": "American actor",
+                                "id": "0"
+                            },
+                            "relation": "acted in",
+                            "original_relation_name": null,
+                            "tail": {
+                                "entity": "A Quiet Street",
+                                "description": "1922 film",
+                                "id": "0"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Mickey Daniels",
+                                "description": "American actor",
+                                "id": "0"
+                            },
+                            "relation": "acted in",
+                            "original_relation_name": null,
+                            "tail": {
+                                "entity": "July Days",
+                                "description": "1923 film",
+                                "id": "0"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Mickey Daniels",
+                                "description": "American actor",
+                                "id": "0"
+                            },
+                            "relation": "acted in",
+                            "original_relation_name": null,
+                            "tail": {
+                                "entity": "Stage Fright",
+                                "description": "1923 film",
+                                "id": "0"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Mickey Daniels",
+                                "description": "American actor",
+                                "id": "0"
+                            },
+                            "relation": "acted in",
+                            "original_relation_name": null,
+                            "tail": {
+                                "entity": "The Champeen",
+                                "description": "1922 film",
+                                "id": "0"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 3,
+                    "old_score": 0.748,
+                    "new_score": 0.452,
+                    "note": "\u00e8 l\'esempio del paper: gli indizi che gli fanno dire che mickey_daniels abbia recitato in the_big_show sono altri film in cui ha recitato con lo stesso gruppo di attori"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Abu Dhabi International Airport",
+                        "description": "Airport in UAE",
+                        "id": "0"
+                    },
+                    "relation": "is connected to",
+                    "original_relation_name": null,
+                    "tail": {
+                        "entity": "Tribhuvan International Airport",
+                        "description": "Airport in Nepal",
+                        "id": "0"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Abu Dhabi International Airport",
+                                "description": "Airport in UAE",
+                                "id": "0"
+                            },
+                            "relation": "is connected to",
+                            "original_relation_name": null,
+                            "tail": {
+                                "entity": "Hong Kong International Airport",
+                                "description": "Honk Kong Airport",
+                                "id": "0"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 4,
+                    "old_score": 0.974,
+                    "new_score": 0.957,
+                    "note": "gli aeroporti sono tutti connessi tra loro"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Andrea Esposito",
+                        "description": "Italian footballer",
+                        "id": "0"
+                    },
+                    "relation": "is affiliated to",
+                    "original_relation_name": null,
+                    "tail": {
+                        "entity": "U.S. Lecce",
+                        "description": "Italian football team",
+                        "id": "0"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Andrea Esposito",
+                                "description": "Italian footballer",
+                                "id": "0"
+                            },
+                            "relation": "plays for",
+                            "original_relation_name": null,
+                            "tail": {
+                                "entity": "U.S. Lecce",
+                                "description": "Italian football team",
+                                "id": "0"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 5,
+                    "old_score": 0.887,
+                    "new_score": 0.034,
+                    "note": "solito playsfor->isaffiliatedto di YAGO3-10"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Cristian Ianu",
+                        "description": "Romanian footballer",
+                        "id": "0"
+                    },
+                    "relation": "plays for",
+                    "original_relation_name": null,
+                    "tail": {
+                        "entity": "FC Wohlen",
+                        "description": "Swiss Football team",
+                        "id": "0"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Cristian Ianu",
+                                "description": "Romanian footballer",
+                                "id": "0"
+                            },
+                            "relation": "is affiliated to",
+                            "original_relation_name": null,
+                            "tail": {
+                                "entity": "FC Wohlen",
+                                "description": "Swiss Football team",
+                                "id": "0"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 144,
+                    "old_score": 0.734,
+                    "new_score": 0.001,
+                    "note": "solito isaffiliatedto->playsfor di YAGO3-10"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Philip Wadler",
+                        "description": "American computer scientist",
+                        "id": "0"
+                    },
+                    "relation": "works at",
+                    "original_relation_name": null,
+                    "tail": {
+                        "entity": "Carnegie Mellon University",
+                        "description": "Private university in Pittsburgh, Pennsylvania",
+                        "id": "0"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Philip Wadler",
+                                "description": "American computer scientist",
+                                "id": "0"
+                            },
+                            "relation": "graduated from",
+                            "original_relation_name": null,
+                            "tail": {
+                                "entity": "Carnegie Mellon University",
+                                "description": "Private university in Pittsburgh, Pennsylvania",
+                                "id": "0"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Philip Wadler",
+                                "description": "American computer scientist",
+                                "id": "0"
+                            },
+                            "relation": "works at",
+                            "original_relation_name": null,
+                            "tail": {
+                                "entity": "Chalmers University Of Technology",
+                                "description": "University in Sweden",
+                                "id": "0"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 33,
+                    "old_score": 0.896,
+                    "new_score": 0.012,
+                    "note": "Apparentemente in Yago se ti laurei in un\'universit\u00e0 poi tendi a lavorarci anche. In questo caso, il fatto che abbia lavorato in altre universit\u00e0 sicuramente aiuta la predizione"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Leonard Eugene Dickson",
+                        "description": "American mathematician",
+                        "id": "0"
+                    },
+                    "relation": "works at",
+                    "original_relation_name": null,
+                    "tail": {
+                        "entity": "University Of Chicago",
+                        "description": "A private research university in Chicago, Illinois",
+                        "id": "0"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Leonard Eugene Dickson",
+                                "description": "American mathematician",
+                                "id": "0"
+                            },
+                            "relation": "graduated from",
+                            "original_relation_name": null,
+                            "tail": {
+                                "entity": "University Of Chicago",
+                                "description": "A private research university in Chicago, Illinois",
+                                "id": "0"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Leonard Eugene Dickson",
+                                "description": "American mathematician",
+                                "id": "0"
+                            },
+                            "relation": "is citizen of",
+                            "original_relation_name": null,
+                            "tail": {
+                                "entity": "United States",
+                                "description": "A country primarily located in North America",
+                                "id": "0"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Leonard Eugene Dickson",
+                                "description": "American mathematician",
+                                "id": "0"
+                            },
+                            "relation": "has academic advisor",
+                            "original_relation_name": null,
+                            "tail": {
+                                "entity": "Eliakim Hastings Moore",
+                                "description": "American mathematician",
+                                "id": "0"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Leonard Eugene Dickson",
+                                "description": "American mathematician",
+                                "id": "0"
+                            },
+                            "relation": "was born in",
+                            "original_relation_name": null,
+                            "tail": {
+                                "entity": "Independence",
+                                "description": "City in Iowa",
+                                "id": "0"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 26,
+                    "old_score": 0.991,
+                    "new_score": 0.003,
+                    "note": "apparentemente in Yago se ti laurei in un\'universit\u00e0 poi tendi a lavorarci anche. in questo caso il fatto che abbia avuto come advisor e._h._moore, che \u00e8 un matematico famoso della university_of_chicago, sicuramente aiuta. Gli altri fatti (il fatto che sia americano e non lontano da Chicago) aiutano a dare contesto"
+                }
+            }
+        ]
+    }
+]

@@ -1,0 +1,2291 @@
+[
+    {
+        "model": "ComplEx",
+        "dataset": "FB15k",
+        "scenario": "necessary",
+        "explained_predictions": [
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Holly Marie Combs",
+                        "description": "American actress",
+                        "id": "/m/029q_y"
+                    },
+                    "relation": "has been friends with",
+                    "original_relation_name":"/base/popstra/celebrity/friendship./base/popstra/friendship/participant",
+                    "tail": {
+                        "entity": "Ben Affleck",
+                        "description": "American actor",
+                        "id": "/m/0151w_"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Ben Affleck",
+                                "description": "American actor",
+                                "id": "/m/0151w_"
+                            },
+                            "relation": "has been friends with",
+                            "original_relation_name":"/base/popstra/celebrity/friendship./base/popstra/friendship/participant",
+                            "tail": {
+                                "entity": "Holly Marie Combs",
+                                "description": "American actress",
+                                "id": "/m/029q_y"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 689,
+                    "old_score": 10.693,
+                    "new_score": 2.616,
+                    "note": "classica relazione inversa di FB15k"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Anthropology",
+                        "description": "Field of study",
+                        "id": "/m/0h5k"
+                    },
+                    "relation": "is a field of study majored by students from",
+                    "original_relation_name":"/education/field_of_study/students_majoring./education/education/institution",
+                    "tail": {
+                        "entity": "The University of Sydney",
+                        "description": "Public university in Sydney, Australia",
+                        "id": "/m/07vk2"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "The University of Sydney",
+                                "description": "Public university in Sydney, Australia",
+                                "id": "/m/07vk2"
+                            },
+                            "relation": "has been attended by students whose major field of study is",
+                            "original_relation_name":"/education/educational_institution/students_graduates./education/education/major_field_of_study",
+                            "tail": {
+                                "entity": "Anthropology",
+                                "description": "Field of study",
+                                "id": "/m/0h5k"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 137,
+                    "old_score": 11.951,
+                    "new_score": 7.555,
+                    "note": "classica relazione inversa di FB15k"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Paul Bettany",
+                        "description": "American Actor",
+                        "id": "/m/01chc7"
+                    },
+                    "relation": "is an actor that has performed in film",
+                    "original_relation_name":"/film/actor/film./film/performance/film",
+                    "tail": {
+                        "entity": "Priest",
+                        "description": "2011 film",
+                        "id": "/m/076xkps"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Priest",
+                                "description": "2011 film",
+                                "id": "/m/076xkps"
+                            },
+                            "relation": "is a film starring the actor",
+                            "original_relation_name":"/film/film/starring./film/performance/actor",
+                            "tail": {
+                                "entity": "Paul Bettany",
+                                "description": "Actor",
+                                "id": "/m/01chc7"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 646,
+                    "old_score": 10.541,
+                    "new_score": 4.301,
+                    "note": "classica relazione inversa di FB15k"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Danube",
+                        "description": "River in Europe",
+                        "id": "/m/026zt"
+                    },
+                    "relation": "is a river in the country",
+                    "original_relation_name":"/geography/river/basin_countries",
+                    "tail": {
+                        "entity": "Serbia",
+                        "description": "Country in the Balkans",
+                        "id": "/m/077qn"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Serbia",
+                                "description": "Country in the Balkans",
+                                "id": "/m/077qn"
+                            },
+                            "relation": "is a location that partially contains",
+                            "original_relation_name": "/location/location/partially_contains",
+                            "tail": {
+                                "entity": "Danube",
+                                "description": "River in Europe",
+                                "id": "/m/026zt"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Danube",
+                                "description": "River in Europe",
+                                "id": "/m/026zt"
+                            },
+                            "relation": "is a river in the country",
+                            "original_relation_name":"/geography/river/basin_countries",
+                            "tail": {
+                                "entity": "Croatia",
+                                "description": "Country in the Balkans",
+                                "id": "/m/01pj7"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 13,
+                    "old_score": 8.018,
+                    "new_score": 7.178,
+                    "note": "il Danubio \u00e8 un fiume contenuto in Serbia e in un paese confinante"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Togo",
+                        "description": "Country in West Africa",
+                        "id": "/m/07f5x"
+                    },
+                    "relation": "is a location neighboring to",
+                    "original_relation_name":"/location/location/adjoin_s./location/adjoining_relationship/adjoins",
+                    "tail": {
+                        "entity": "Benin",
+                        "description": "Country in West Africa",
+                        "id": "/m/0164v"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Benin",
+                                "description": "Country in West Africa",
+                                "id": "/m/0164v"
+                            },
+                            "relation": "is a location neighboring to",
+                            "original_relation_name":"/location/location/adjoin_s./location/adjoining_relationship/adjoins",
+                            "tail": {
+                                "entity": "Togo",
+                                "description": "Country in West Africa",
+                                "id": "/m/07f5x"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 28,
+                    "old_score": 12.917,
+                    "new_score": 7.539,
+                    "note": "classico fatto inverso di FB15k"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Oceania",
+                        "description": "Continent",
+                        "id": "/m/05nrg"
+                    },
+                    "relation": "is a location that contains",
+                    "original_relation_name":"/location/location/contains",
+                    "tail": {
+                        "entity": "Nauru",
+                        "description": "Country in Oceania",
+                        "id": "/m/05br2"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Oceania",
+                                "description": "Continent",
+                                "id": "/m/05nrg"
+                            },
+                            "relation": "is a location that contains",
+                            "original_relation_name":"/location/location/contains",
+                            "tail": {
+                                "entity": "Palau",
+                                "description": "Country in Oceania",
+                                "id": "/m/05tr7"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Oceania",
+                                "description": "Continent",
+                                "id": "/m/05nrg"
+                            },
+                            "relation": "is a location that contains",
+                            "original_relation_name":"/location/location/contains",
+                            "tail": {
+                                "entity": "Guam",
+                                "description": "Territory",
+                                "id": "/m/034tl"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Oceania",
+                                "description": "Continent",
+                                "id": "/m/05nrg"
+                            },
+                            "relation": "is a location that contains",
+                            "original_relation_name":"/location/location/contains",
+                            "tail": {
+                                "entity": "Cook Islands",
+                                "description": "Island country",
+                                "id": "/m/020p1"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Oceania",
+                                "description": "Continent",
+                                "id": "/m/05nrg"
+                            },
+                            "relation": "is a location that contains",
+                            "original_relation_name":"/location/location/contains",
+                            "tail": {
+                                "entity": "Timor-Leste",
+                                "description": "Southeast Asian Country",
+                                "id": "/m/02lx0"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 2,
+                    "old_score": 13.465,
+                    "new_score": 12.533,
+                    "note": "ragionamento per analogia: l\'Oceania contiene Nauru perch\u00e9 contiene anche altri stati e territori della Micronesia e del pacifico"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Physicist",
+                        "description": "profession",
+                        "id": "/m/05snw"
+                    },
+                    "relation": "is a profession of",
+                    "original_relation_name":"/people/profession/people_with_this_profession",
+                    "tail": {
+                        "entity": "Aristotle",
+                        "description": "Greek philosopher",
+                        "id": "/m/0gz_"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Aristotle",
+                                "description": "Greek philosopher",
+                                "id": "/m/0gz_"
+                            },
+                            "relation": "has profession",
+                            "original_relation_name":"/people/person/profession",
+                            "tail": {
+                                "entity": "Physicist",
+                                "description": "profession",
+                                "id": "/m/05snw"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Physicist",
+                                "description": "profession",
+                                "id": "/m/05snw"
+                            },
+                            "relation": "is a profession of",
+                            "original_relation_name":"/people/profession/people_with_this_profession",
+                            "tail": {
+                                "entity": "Gottfried Wilhelm Leibniz",
+                                "description": "Mathematician",
+                                "id": "/m/0372p"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Plato",
+                                "description": "Athenian philosopher",
+                                "id": "/m/05qmj"
+                            },
+                            "relation": "has profession",
+                            "original_relation_name":"/people/person/profession",
+                            "tail": {
+                                "entity": "Physicist",
+                                "description": "Profession",
+                                "id": "/m/05snw"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Physicist",
+                                "description": "profession",
+                                "id": "/m/05snw"
+                            },
+                            "relation": "is a profession of",
+                            "original_relation_name":"/people/profession/people_with_this_profession",
+                            "tail": {
+                                "entity": "Galileo Galilei",
+                                "description": "Astronomer",
+                                "id": "/m/034ks"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 12,
+                    "old_score": 10.811,
+                    "new_score": 8.008,
+                    "note": "ragionamento per analogia: oltre al fatto inverso, qui, c\'\u00e8 il fatto che anche altri filosofi sono stati Physicists"
+                }
+            }
+        ]
+    },
+    {
+        "model": "ComplEx",
+        "dataset": "WN18",
+        "scenario": "necessary",
+        "explained_predictions": [
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Lunch",
+                        "description": "The midday meal",
+                        "id": "01185304"
+                    },
+                    "relation": "_derivationally_related_form",
+                    "tail": {
+                        "entity": "Tiffin",
+                        "description": "A midday meal",
+                        "id": "07575076"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Tiffin",
+                                "description": "The midday meal",
+                                "id": "07575076"
+                            },
+                            "relation": "_derivationally_related_form",
+                            "tail": {
+                                "entity": "Lunch",
+                                "description": "A midday meal",
+                                "id": "01185304"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 89,
+                    "old_score": 10.941,
+                    "new_score": 1.536,
+                    "note": "Classica relazione simmetrica in WN18"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Gesture",
+                        "description": "Motion of hands or body to express a thought or feeling",
+                        "id": "00334509"
+                    },
+                    "relation": "_hypernym",
+                    "tail": {
+                        "entity": "Movement",
+                        "description": "Change of position not entailing a change of location",
+                        "id": "00279835"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Movement",
+                                "description": "Change of position not entailing a change of location",
+                                "id": "00279835"
+                            },
+                            "relation": "_hyponym",
+                            "tail": {
+                                "entity": "Gesture",
+                                "description": "Motion of hands or body to express a thought or feeling",
+                                "id": "00334509"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 106,
+                    "old_score": 10.212,
+                    "new_score": 1.624,
+                    "note": "Classica relazione inversa di WN18"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Dermestidae Family",
+                        "description": "The zoology family of carpet beetles",
+                        "id": "02170269"
+                    },
+                    "relation": "_member_meronym",
+                    "tail": {
+                        "entity": "Carpet Bug",
+                        "description": "Small beetle whose larvae are household pests feeding on woolen fabrics",
+                        "id": "02170400"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Carpet Bug",
+                                "description": "Small beetle whose larvae are household pests feeding on woolen fabrics",
+                                "id": "02170400"
+                            },
+                            "relation": "_member_holonym",
+                            "tail": {
+                                "entity": "Dermestidae Family",
+                                "description": "The zoology family of carpet beetles",
+                                "id": "02170269"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 228,
+                    "old_score": 11.472,
+                    "new_score": 3.871,
+                    "note": "Classica relazione inversa di WN18"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Great East Islamic Raiders\u2013Front",
+                        "description": "Turkish terrorist organization that violently opposes Turkey\'s secular governments and their ties to EU and NATO",
+                        "id": "08025497"
+                    },
+                    "relation": "_synset_domain_region_of",
+                    "tail": {
+                        "entity": "Turkey",
+                        "description": "Eurasian republic in Asia Minor and the Balkans",
+                        "id": "07365193"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Turkey",
+                                "description": "Eurasian republic in Asia Minor and the Balkans",
+                                "id": "07365193"
+                            },
+                            "relation": "_member_of_domain_region",
+                            "tail": {
+                                "entity": "Great East Islamic Raiders\u2013Front",
+                                "description": "Turkish terrorist organization that violently opposes Turkey\'s secular governments and their ties to EU and NATO",
+                                "id": "08025497"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 6,
+                    "old_score": 11.27,
+                    "new_score": 5.658,
+                    "note": "Classica relazione inversa di WN18"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Spouse Equivalent",
+                        "description": "A person (not necessarily a spouse) with whom you cohabit and share a long-term sexual relationship",
+                        "id": "10024362"
+                    },
+                    "relation": "_hyponym",
+                    "tail": {
+                        "entity": "Lover",
+                        "description": "A significant other to whom you are not related by marriage",
+                        "id": "10077593"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Lover",
+                                "description": "A significant other to whom you are not related by marriage",
+                                "id": "10077593"
+                            },
+                            "relation": "_hypernym",
+                            "tail": {
+                                "entity": "Spouse Equivalent",
+                                "description": "A person (not necessarily a spouse) with whom you cohabit and share a long-term sexual relationship",
+                                "id": "10024362"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Spouse Equivalent",
+                                "description": "A person (not necessarily a spouse) with whom you cohabit and share a long-term sexual relationship",
+                                "id": "10024362"
+                            },
+                            "relation": "_hyponym",
+                            "tail": {
+                                "entity": "Spouse",
+                                "description": "A person\'s partner in marriage",
+                                "id": "10640620"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 4431,
+                    "old_score": 10.792,
+                    "new_score": 0.404,
+                    "note": "La predizione \u00e8 che Spouse Equivalent \u00e8 un caso generale di Lover. Qui la spiegazione \u00e8 data sia dal fatto inverso dal fatto che Spouse Equivalent \u00e8 anche un caso generale di Spouse"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Right Fielder",
+                        "description": "In baseball, it is a person who plays in the right field",
+                        "id": "10387196"
+                    },
+                    "relation": "_derivationally_related_form",
+                    "tail": {
+                        "entity": "Rightfield",
+                        "description": "The piece of ground in the outfield on the catcher\'s right",
+                        "id": "04091839"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Rightfield",
+                                "description": "The piece of ground in the outfield on the catcher\'s right",
+                                "id": "04091839"
+                            },
+                            "relation": "_derivationally_related_form",
+                            "tail": {
+                                "entity": "Right Fielder",
+                                "description": "In baseball, it is a person who plays in the right field",
+                                "id": "10387196"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Right Fielder",
+                                "description": "In baseball, it is a person who plays in the rightfield",
+                                "id": "10387196"
+                            },
+                            "relation": "_hypernym",
+                            "tail": {
+                                "entity": "Outfielder",
+                                "description": "In baseball, it is a person who plays in the outfield",
+                                "id": "10386984"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Outfielder",
+                                "description": "In baseball, it is a person who plays in the outfield",
+                                "id": "10386984"
+                            },
+                            "relation": "_hyponym",
+                            "tail": {
+                                "entity": "Right Fielder",
+                                "description": "In baseball, it is a person who plays in the rightfield",
+                                "id": "10387196"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 34408,
+                    "old_score": 11.074,
+                    "new_score": -2.258,
+                    "note": "Qui, ad abilitare la predizione che Right Fielder \u00e8 legato da una dipendenza con Rightfield, oltre al fatto inverso ci sono anche i fatti che dicono che il Right Fielder \u00e8 un caso generale di Outfielder (e a sua volta l\'outfielder \u00e8 legato a rightfield nei dati di training)"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Fred Astaire",
+                        "description": "US dancer and actor famous for his tap dancing",
+                        "id": "10826352"
+                    },
+                    "relation": "_instance_hypernym",
+                    "tail": {
+                        "entity": "Terpsichorean",
+                        "description": " A performer who dances professionally",
+                        "id": "09989502"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Terpsichorean",
+                                "description": " A performer who dances professionally",
+                                "id": "09989502"
+                            },
+                            "relation": "_instance_hyponym",
+                            "tail": {
+                                "entity": "Fred Astaire",
+                                "description": "US dancer and actor famous for his tap dancing",
+                                "id": "10826352"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Choreographer",
+                                "description": "Someone who creates new dances",
+                                "id": "09920283"
+                            },
+                            "relation": "_instance_hyponym",
+                            "tail": {
+                                "entity": "Fred Astaire",
+                                "description": "US dancer and actor famous for his tap dancing",
+                                "id": "10826352"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Fred Astaire",
+                                "description": "US dancer and actor famous for his tap dancing",
+                                "id": "10826352"
+                            },
+                            "relation": "_instance_hypernym",
+                            "tail": {
+                                "entity": "Choreographer",
+                                "description": "Someone who creates new dances",
+                                "id": "09920283"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 6,
+                    "old_score": 10.312,
+                    "new_score": 4.179,
+                    "note": "Qui ad abilitare la predizione che fred_astaire \u00e8 un terpsichorean (ballerino), oltre al fatto inverso ci sono i fatti che dicono che Fred Astaire \u00e8 stato un coreografo di ballo"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Incoherent",
+                        "description": "Without logical or meaningful connection",
+                        "id": "00464962"
+                    },
+                    "relation": "_also_see",
+                    "tail": {
+                        "entity": "Unlogical",
+                        "description": "Lacking in correct logical relation",
+                        "id": "01430847"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Unlogical",
+                                "description": "Lacking in correct logical relation",
+                                "id": "01430847"
+                            },
+                            "relation": "_also_see",
+                            "tail": {
+                                "entity": "Incoherent",
+                                "description": "Without logical or meaningful connection",
+                                "id": "00464962"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Incoherent",
+                                "description": "Without logical or meaningful connection",
+                                "id": "00464962"
+                            },
+                            "relation": "_also_see",
+                            "tail": {
+                                "entity": "Irrational",
+                                "description": "Not consistent with or using reason",
+                                "id": "01926376"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Irrational",
+                                "description": "Not consistent with or using reason",
+                                "id": "01926376"
+                            },
+                            "relation": "_also_see",
+                            "tail": {
+                                "entity": "Incoherent",
+                                "description": "Without logical or meaningful connection",
+                                "id": "00464962"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Unintelligibility",
+                                "description": "Nonsense that is just incoherent and unintelligible",
+                                "id": "06608977"
+                            },
+                            "relation": "_derivationally_related_form",
+                            "tail": {
+                                "entity": "Incoherent",
+                                "description": "Without logical or meaningful connection",
+                                "id": "00464962"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 7640,
+                    "old_score": 10.203,
+                    "new_score": 0.507,
+                    "note": "Qui ad abilitare la predizione che Incoherent \u00e8 legato a Unlogical c\'\u00e8 il fatto che \u00e8 anche legato a Irrational e a Unintelligibility, anche loro legati a Unlogical"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "To Sleigh",
+                        "description": "The act of riding on a sled",
+                        "id": "01939174"
+                    },
+                    "relation": "_derivationally_related_form",
+                    "tail": {
+                        "entity": "Sledding",
+                        "description": "The sport of riding on a sled or sleigh",
+                        "id": "00447073"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Sledding",
+                                "description": "The sport of riding on a sled or sleigh",
+                                "id": "00447073"
+                            },
+                            "relation": "_derivationally_related_form",
+                            "tail": {
+                                "entity": "To Sleigh",
+                                "description": "The act of riding on a sled",
+                                "id": "01939174"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "To Sleigh",
+                                "description": "The act of riding on a sled",
+                                "id": "01939174"
+                            },
+                            "relation": "_synset_domain_topic_of",
+                            "tail": {
+                                "entity": "Sport",
+                                "description": "An active diversion requiring physical exertion and competition",
+                                "id": "06780882"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "To Sleigh",
+                                "description": "The act of riding on a sled",
+                                "id": "01939174"
+                            },
+                            "relation": "_derivationally_related_form",
+                            "tail": {
+                                "entity": "Sleigh",
+                                "description": "Vehicle mounted on runners and pulled by horses or dogs",
+                                "id": "04235291"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "To Sleigh",
+                                "description": "The act of riding on a sled",
+                                "id": "01939174"
+                            },
+                            "relation": "_derivationally_related_form",
+                            "tail": {
+                                "entity": "Sledder",
+                                "description": "Someone who rides a sled",
+                                "id": "10610333"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 3605,
+                    "old_score": 10.479,
+                    "new_score": 0.825,
+                    "note": "Qui ad abilitare la predizione che To Sleigh \u00e8 legato a Sledding, oltre al fatto inverso c\'\u00e8 il fatto che To Sleigh \u00e8 legato a termini affini come Sport, Sleigh e Sledder"
+                }
+            }
+        ]
+    },
+    {
+        "model": "ComplEx",
+        "dataset": "FB15k-237",
+        "scenario": "necessary",
+        "explained_predictions": [
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Cessna",
+                        "description": "Aviation company",
+                        "id": "/m/01xl5"
+                    },
+                    "relation": "is an organization with headquarters in the city",
+                    "original_relation_name":"/organization/organization/headquarters./location/mailing_address/citytown",
+                    "tail": {
+                        "entity": "Wichita",
+                        "description": "City in Kansas",
+                        "id": "/m/0tbql"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Cessna",
+                                "description": "Aviation company",
+                                "id": "/m/01xl5"
+                            },
+                            "relation": "is an organization with headquarters in the state / province / region",
+                            "original_relation_name":"/organization/organization/headquarters./location/mailing_address/state_province_region",
+                            "tail": {
+                                "entity": "Kansas",
+                                "description": "US State",
+                                "id": "/m/0488g"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 137,
+                    "old_score": 7.776,
+                    "new_score": 1.876,
+                    "note": "Il sistema predice che Cessna ha headquarters a Wichita perch\u00e9 sa che ha headwarters nello stato di cui Wichita \u00e8 capitale"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Charles University",
+                        "description": "Public university in Prague, Czechia",
+                        "id": "/m/09hgk"
+                    },
+                    "relation": "has been attended by",
+                    "tail": {
+                        "entity": "Franz Kafka",
+                        "description": "Novelist",
+                        "id": "/m/03f0324"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Charles University",
+                                "description": "Public university in Prague, Czechia",
+                                "id": "/m/09hgk"
+                            },
+                            "relation": "is an organization with headquarters in the state / province / region",
+                            "original_relation_name":"/organization/organization/headquarters./location/mailing_address/state_province_region",
+                            "tail": {
+                                "entity": "Prague",
+                                "description": "Capital of the Czech Republic",
+                                "id": "/m/05ywg"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Prague",
+                                "description": "Capital of the Czech Republic",
+                                "id": "/m/05ywg"
+                            },
+                            "relation": "is a location that contains",
+                            "original_relation_name":"/location/location/contains",
+                            "tail": {
+                                "entity": "Charles University",
+                                "description": "Public university in Prague, Czechia",
+                                "id": "/m/09hgk"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 191,
+                    "old_score": 6.073,
+                    "new_score": 2.589,
+                    "note": "Predice che Kafka \u00e8 andato alla Charles University perch\u00e9 \u00e8 l\'universit\u00e0 di Praga"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Electric blues",
+                        "description": "Music genre",
+                        "id": "/m/0175yg"
+                    },
+                    "relation": "is the music genre of the artist",
+                    "original_relation_name":"/music/genre/artists",
+                    "tail": {
+                        "entity": "Buddy Guy",
+                        "description": "American guitarist",
+                        "id": "/m/02qsjt"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Electric blues",
+                                "description": "Music genre",
+                                "id": "/m/0175yg"
+                            },
+                            "relation": "is the music genre of the artist",
+                            "original_relation_name":"/music/genre/artists",
+                            "tail": {
+                                "entity": "B.B. King",
+                                "description": "American singer and songwriter",
+                                "id": "/m/01w60_p"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Electric blues",
+                                "description": "Music genre",
+                                "id": "/m/0175yg"
+                            },
+                            "relation": "is the music genre of the artist",
+                            "original_relation_name":"/music/genre/artists",
+                            "tail": {
+                                "entity": "Robert Cray",
+                                "description": "American guitarist",
+                                "id": "/m/01kh2m1"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 15,
+                    "note": "Ragiona per analogia: predice che l\'Electric blues \u00e8 il genere di Buddy Guy perch\u00e9 \u00e8 il genere di altri chitarristi simili"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Cinderella",
+                        "description": "1950 film",
+                        "id": "/m/023p33"
+                    },
+                    "relation": "is a film produced by",
+                    "original_relation_name":"/film/film/produced_by",
+                    "tail": {
+                        "entity": "Walt Disney",
+                        "description": "American entrepreneur",
+                        "id": "/m/081nh"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Cinderella",
+                                "description": "1950 film",
+                                "id": "/m/023p33"
+                            },
+                            "relation": "is a film produced by company",
+                            "original_relation_name":"/film/film/production_companies",
+                            "tail": {
+                                "entity": "Walt Disney Animation Studios",
+                                "description": "Animation company",
+                                "id": "/m/04rcl7"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Cinderella",
+                                "description": "1950 film",
+                                "id": "/m/023p33"
+                            },
+                            "relation": "is a film produced by company",
+                            "original_relation_name":"/film/film/production_companies",
+                            "tail": {
+                                "entity": "The Walt Disney Company",
+                                "description": "Mass media company",
+                                "id": "/m/09b3v"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Academy Award for Best Music (Original Song)",
+                                "description": "Oscar Award",
+                                "id": "/m/0gqz2"
+                            },
+                            "relation": "is an award for which someone was nominated thanks to this work",
+                            "original_relation_name":"/award/award_category/nominees./award/award_nomination/nominated_for",
+                            "tail": {
+                                "entity": "Cinderella",
+                                "description": "1950 film",
+                                "id": "/m/023p33"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 9,
+                    "old_score": 6.042,
+                    "new_score": 3.818,
+                    "note": "Cenerentola \u00e8 predetta come prodotta dal signor Walt Disney perch\u00e9 le sue production companies sono legate a Disney e perch\u00e9 ha vinto premi spesso vinti da film prodotti da Disney"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Tamils",
+                        "description": "People",
+                        "id": "/m/01rv7x"
+                    },
+                    "relation": "are the ethnic group of",
+                    "original_relation_name":"/people/ethnicity/people",
+                    "tail": {
+                        "entity": "Nassar",
+                        "description": "Indian film actor",
+                        "id": "/m/0dfjb8"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Tamils",
+                                "description": "People",
+                                "id": "/m/01rv7x"
+                            },
+                            "relation": "are the ethnic group of",
+                            "original_relation_name":"/people/ethnicity/people",
+                            "tail": {
+                                "entity": "A. R. Rahman",
+                                "description": "Indian film composer",
+                                "id": "/m/01gg59"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Tamils",
+                                "description": "People",
+                                "id": "/m/01rv7x"
+                            },
+                            "relation": "are the ethnic group of",
+                            "original_relation_name":"/people/ethnicity/people",
+                            "tail": {
+                                "entity": "Hema Malini",
+                                "description": "Indian actress",
+                                "id": "/m/02n1p5"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Tamils",
+                                "description": "People",
+                                "id": "/m/01rv7x"
+                            },
+                            "relation": "are the ethnic group of",
+                            "original_relation_name":"/people/ethnicity/people",
+                            "tail": {
+                                "entity": "Santhanam",
+                                "description": "Indian actor",
+                                "id": "/m/0gp_x9"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 17,
+                    "old_score": 6.468,
+                    "new_score": 5.038,
+                    "note": "Ragiona per analogia: i Tamil sono l\'etnia di Nassar perch\u00e9 sono l\'etnia di altri attori simili"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Boyz II Men",
+                        "description": "Vocal group",
+                        "id": "/m/015bwt"
+                    },
+                    "relation": "was nominated for",
+                    "original_relation_name":"/award/award_nominee/award_nominations./award/award_nomination/award",
+                    "tail": {
+                        "entity": "Grammy Award for Best R&B Performance by a Duo or Group with Vocals",
+                        "description": "Award",
+                        "id": "/m/01d38g"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Boyz II Men",
+                                "description": "Vocal group",
+                                "id": "/m/015bwt"
+                            },
+                            "relation": "was nominated for",
+                            "original_relation_name":"/award/award_nominee/award_nominations./award/award_nomination/award",
+                            "tail": {
+                                "entity": "Grammy Award for Best R&B Album",
+                                "description": "Award",
+                                "id": "/m/031b3h"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Boyz II Men",
+                                "description": "Vocal group",
+                                "id": "/m/015bwt"
+                            },
+                            "relation": "was nominated for",
+                            "original_relation_name":"/award/award_nominee/award_nominations./award/award_nomination/award",
+                            "tail": {
+                                "entity": "Grammy Award for Best New Artist",
+                                "description": "Award",
+                                "id": "/m/01c427"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Grammy Award for Best R&B Album",
+                                "description": "Award",
+                                "id": "/m/031b3h"
+                            },
+                            "relation": "is an award that has been won by",
+                            "tail": {
+                                "entity": "Boyz II Men",
+                                "description": "Vocal Group",
+                                "id": "/m/015bwt"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Boyz II Men",
+                                "description": "Vocal group",
+                                "id": "/m/015bwt"
+                            },
+                            "relation": "was nominated for",
+                            "original_relation_name":"/award/award_nominee/award_nominations./award/award_nomination/award",
+                            "tail": {
+                                "entity": "Grammy Award for Best Pop Collaboration with Vocals",
+                                "description": "Award",
+                                "id": "/m/03qbh5"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 4,
+                    "old_score": 7.055,
+                    "new_score": 5.891,
+                    "note": "La predizione \u00e8 causata dal fatto che lo stesso gruppo ha vinto molti altri premi simili"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "The Pianist",
+                        "description": "2002 film",
+                        "id": "/m/064lsn"
+                    },
+                    "relation": "is a film that was released in region",
+                    "original_relation_name":"/film/film/release_date_s./film/film_regional_release_date/film_release_region",
+                    "tail": {
+                        "entity": "Italy",
+                        "description": "County in Europe",
+                        "id": "/m/03rjj"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "The Pianist",
+                                "description": "2002 film",
+                                "id": "/m/064lsn"
+                            },
+                            "relation": "is a film that was released in region",
+                            "original_relation_name":"/film/film/release_date_s./film/film_regional_release_date/film_release_region",
+                            "tail": {
+                                "entity": "France",
+                                "description": "Country in Europe",
+                                "id": "/m/0f8l9c"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "The Pianist",
+                                "description": "2002 film",
+                                "id": "/m/064lsn"
+                            },
+                            "relation": "is a film that was released in region",
+                            "original_relation_name":"/film/film/release_date_s./film/film_regional_release_date/film_release_region",
+                            "tail": {
+                                "entity": "Austria",
+                                "description": "Country in Europe",
+                                "id": "/m/0h7x"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "The Pianist",
+                                "description": "2002 film",
+                                "id": "/m/064lsn"
+                            },
+                            "relation": "is a film that was released in region",
+                            "original_relation_name":"/film/film/release_date_s./film/film_regional_release_date/film_release_region",
+                            "tail": {
+                                "entity": "Denmark",
+                                "description": "Country in Europe",
+                                "id": "/m/0k6nt"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "The Pianist",
+                                "description": "2002 film",
+                                "id": "/m/064lsn"
+                            },
+                            "relation": "is a film that was released in region",
+                            "original_relation_name":"/film/film/release_date_s./film/film_regional_release_date/film_release_region",
+                            "tail": {
+                                "entity": "Sweden",
+                                "description": "Country in Europe",
+                                "id": "/m/0d0vqn"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 4,
+                    "old_score": 6.162,
+                    "new_score": 5.894,
+                    "note": "Nota: ragiona per analogia: la predizione \u00e8 causata dal fatto che lo stesso film \u00e8 uscito in tutta Europa"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Morgan Spurlock",
+                        "description": "American documentary filmmaker",
+                        "id": "/m/035sc2"
+                    },
+                    "relation": "has profession",
+                    "original_relation_name":"/people/person/profession",
+                    "tail": {
+                        "entity": "Film producer",
+                        "description": "Profession",
+                        "id": "/m/01d_h8"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Morgan Spurlock",
+                                "description": "American documentary filmmaker",
+                                "id": "/m/035sc2"
+                            },
+                            "relation": "has profession",
+                            "original_relation_name":"/people/person/profession",
+                            "tail": {
+                                "entity": "Screenwriter",
+                                "description": "Profession",
+                                "id": "/m/0dxtg"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Morgan Spurlock",
+                                "description": "American documentary filmmaker",
+                                "id": "/m/035sc2"
+                            },
+                            "relation": "has profession",
+                            "original_relation_name":"/people/person/profession",
+                            "tail": {
+                                "entity": "Television producer",
+                                "description": "TV producer type",
+                                "id": "/m/03gjzk"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Morgan Spurlock",
+                                "description": "American documentary filmmaker",
+                                "id": "/m/035sc2"
+                            },
+                            "relation": "has profession",
+                            "original_relation_name":"/people/person/profession",
+                            "tail": {
+                                "entity": "Film director",
+                                "description": "Profession",
+                                "id": "/m/02jknp"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Morgan Spurlock",
+                                "description": "American documentary filmmaker",
+                                "id": "/m/035sc2"
+                            },
+                            "relation": "was nominated for",
+                            "original_relation_name":"/award/award_nominee/award_nominations./award/award_nomination/award",
+                            "tail": {
+                                "entity": "Academy Award for Best Documentary (Feature)",
+                                "description": "Award",
+                                "id": "/m/0gvx_"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 2,
+                    "old_score": 7.228,
+                    "new_score": 5.862,
+                    "note": "Predice che Morgan Spurlock \u00e8 un film producer per il cinema perch\u00e9, specialmente in USA, chi sceneggia film e produce per la TV, produce anche per il cinema. Inoltre Morgan Spurlock ha vinto un premio Oscar, che viene vinto solo per i film usciti al cinema."
+                }
+            }
+        ]
+    },
+    {
+        "model": "ComplEx",
+        "dataset": "WN18RR",
+        "scenario": "necessary",
+        "explained_predictions": [
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Wiper Blade",
+                        "description": "Mechanical device that cleans the windshield",
+                        "id": "04590746"
+                    },
+                    "relation": "_derivationally_related_form",
+                    "tail": {
+                        "entity": "To Wipe",
+                        "description": "To rub with a circular motion",
+                        "id": "01392237"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "To Wipe",
+                                "description": "To rub with a circular motion",
+                                "id": "01392237"
+                            },
+                            "relation": "_derivationally_related_form",
+                            "tail": {
+                                "entity": "Wiper Blade",
+                                "description": "Mechanical device that cleans the windshield",
+                                "id": "04590746"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 941,
+                    "old_score": 9.697,
+                    "new_score": 0.565,
+                    "note": "Classica relazione simmetrica di WN18RR"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Ophiophagus",
+                        "description": "King cobra",
+                        "id": "01748560"
+                    },
+                    "relation": "_hypernym",
+                    "tail": {
+                        "entity": "Reptile Genus",
+                        "description": "A zoology genus of reptiles",
+                        "id": "01657723"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Elapidae Family",
+                                "description": "Zoology family of cobras, kraits, mambas, coral snakes, Australian taipan and tiger snakes",
+                                "id": "01744657"
+                            },
+                            "relation": "_member_meronym",
+                            "tail": {
+                                "entity": "Ophiophagus",
+                                "description": "King cobra",
+                                "id": "01748560"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 3,
+                    "old_score": 6.965,
+                    "new_score": 3.942,
+                    "note": "il cobra reale \u00e8 un genere (genus) di rettili (classe reptilia) perch\u00e9 \u00e8 della famiglia elapidae"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Culpable Negligence",
+                        "description": "In law, recklessly acting (or failing to act) without reasonable caution and putting another person at risk",
+                        "id": "00740342"
+                    },
+                    "relation": "_synset_domain_topic_of",
+                    "tail": {
+                        "entity": "Law",
+                        "description": "The collection of rules imposed by authority",
+                        "id": "06532330"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Culpable Negligence",
+                                "description": "In law, recklessly acting (or failing to act) without reasonable caution and putting another person at risk",
+                                "id": "00740342"
+                            },
+                            "relation": "_hypernym",
+                            "tail": {
+                                "entity": "Nonperformance",
+                                "description": "Failure to act with reasonable prudence",
+                                "id": "00739270"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 18,
+                    "note": "omissione di soccorso \u00e8 un synset del dominio Legge perch\u00e9 \u00e8 un caso particolare di inazione che a sua volta \u00e8 legato a Legge"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Melon Vine",
+                        "description": "Various fruits of cucurbitaceous vines including muskmelons, watermelons, cantaloupes, cucumbers",
+                        "id": "12163824"
+                    },
+                    "relation": "_has_part",
+                    "tail": {
+                        "entity": "Melon",
+                        "description": "Numerous fruits of the gourd family having a hard rind and juicy flesh",
+                        "id": "07755411"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Sweet Melon Vine",
+                                "description": "A vine whose fruit has a netted rind, sweet flesh and a musky smell",
+                                "id": "12164363"
+                            },
+                            "relation": "_hypernym",
+                            "tail": {
+                                "entity": "Melon Vine",
+                                "description": "Various fruits of cucurbitaceous vines including muskmelons, watermelons, cantaloupes, cucumbers",
+                                "id": "12163824"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Watermelon Vine",
+                                "description": "An African melon",
+                                "id": "12164065"
+                            },
+                            "relation": "_hypernym",
+                            "tail": {
+                                "entity": "Melon Vine",
+                                "description": "Various fruits of cucurbitaceous vines including muskmelons, watermelons, cantaloupes, cucumbers",
+                                "id": "12163824"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 154,
+                    "old_score": 7.505,
+                    "new_score": 1.476,
+                    "note": "Predice che i Melon Vines (rampicanti del melone) hanno una parte (frutto) chiamata Melon perch\u00e9 (1) Melon Vine \u00e8 una sovrafamiglia dello Sweet Melon Vine (che produce Melons) e (2) Melon Vine \u00e8 una sovrafamiglia del Watermelon Vine (che produce Melons)"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Uncreative",
+                        "description": "Not creative",
+                        "id": "00644372"
+                    },
+                    "relation": "_also_see",
+                    "tail": {
+                        "entity": "Unoriginal",
+                        "description": "Not original or productive of anything fresh and unusual",
+                        "id": "01688271"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Unoriginal",
+                                "description": "Not original or productive of anything fresh and unusual",
+                                "id": "01688271"
+                            },
+                            "relation": "_also_see",
+                            "tail": {
+                                "entity": "Unproductive",
+                                "description": "Not producing or capable of producing",
+                                "id": "01866535"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Unproductive",
+                                "description": "Not producing or capable of producing",
+                                "id": "01866535"
+                            },
+                            "relation": "_also_see",
+                            "tail": {
+                                "entity": "Uncreative",
+                                "description": "Not creative",
+                                "id": "00644372"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Uncreative",
+                                "description": "Not creative",
+                                "id": "00644372"
+                            },
+                            "relation": "_also_see",
+                            "tail": {
+                                "entity": "Unproductive",
+                                "description": "Not producing or capable of producing",
+                                "id": "01866535"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 22333,
+                    "old_score": 10.076,
+                    "new_score": -2.921,
+                    "note": "La predizione \u00e8 abilitata da una clique di also_see"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Ordered",
+                        "description": "Marked by an orderly, consistent relation of parts",
+                        "id": "00464513"
+                    },
+                    "relation": "_also_see",
+                    "tail": {
+                        "entity": "Logical",
+                        "description": "Capable of reflecting the capability for correct and valid reasoning",
+                        "id": "01430111"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Logical",
+                                "description": "Capable of reflecting the capability for correct and valid reasoning",
+                                "id": "01430111"
+                            },
+                            "relation": "_also_see",
+                            "tail": {
+                                "entity": "Ordered",
+                                "description": "Marked by an orderly, consistent relation of parts",
+                                "id": "00464513"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Ordered",
+                                "description": "Marked by an orderly, consistent relation of parts",
+                                "id": "00464513"
+                            },
+                            "relation": "_also_see",
+                            "tail": {
+                                "entity": "Rational",
+                                "description": "Consistent with or based on reason",
+                                "id": "01925372"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Ordered",
+                                "description": "Marked by an orderly, consistent relation of parts",
+                                "id": "00464513"
+                            },
+                            "relation": "_derivationally_related_form",
+                            "tail": {
+                                "entity": "Coherency",
+                                "description": "Logical, orderly and consistent relation of parts",
+                                "id": "04821277"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Coherency",
+                                "description": "Logical, orderly and consistent relation of parts",
+                                "id": "04821277"
+                            },
+                            "relation": "_derivationally_related_form",
+                            "tail": {
+                                "entity": "Ordered",
+                                "description": "Marked by an orderly, consistent relation of parts",
+                                "id": "00464513"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 3,
+                    "old_score": 9.302,
+                    "new_score": 7.664,
+                    "note": "Ordered \u00e8 predetto come legato a Logical perch\u00e9 c\'\u00e8 il fatto simmetrico e perch\u00e9 \u00e8 legato ad altri concetti legati a Logical, come Rational e Coherency"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "To Split Up",
+                        "description": "To discontinue an association or relation",
+                        "id": "02467662"
+                    },
+                    "relation": "_derivationally_related_form",
+                    "tail": {
+                        "entity": "Separation",
+                        "description": "Coming apart",
+                        "id": "01201021"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "To Split Up",
+                                "description": "To discontinue an association or relation",
+                                "id": "02467662"
+                            },
+                            "relation": "_derivationally_related_form",
+                            "tail": {
+                                "entity": "Severance",
+                                "description": "A personal or social separation",
+                                "id": "07313814"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "To Split Up",
+                                "description": "To discontinue an association or relation",
+                                "id": "02467662"
+                            },
+                            "relation": "_derivationally_related_form",
+                            "tail": {
+                                "entity": "Separation",
+                                "description": "In law, the cessation of cohabitation of man and wife",
+                                "id": "01201429"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "To Split Up",
+                                "description": "To discontinue an association or relation",
+                                "id": "02467662"
+                            },
+                            "relation": "_derivationally_related_form",
+                            "tail": {
+                                "entity": "Separatist",
+                                "description": "An advocate of secession or separation from a larger group",
+                                "id": "10580030"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "To Split Up",
+                                "description": "To discontinue an association or relation",
+                                "id": "02467662"
+                            },
+                            "relation": "_derivationally_related_form",
+                            "tail": {
+                                "entity": "Dissolution",
+                                "description": "The termination or disintegration of a relationship",
+                                "id": "00215314"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 5,
+                    "old_score": 8.861,
+                    "new_score": 8.999,
+                    "note": "clique di _derivationally_related_form"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Unintelligent",
+                        "description": "Lacking intelligence",
+                        "id": "01336587"
+                    },
+                    "relation": "_derivationally_related_form",
+                    "tail": {
+                        "entity": "Stupid Person",
+                        "description": "A person who is not very bright",
+                        "id": "10667187"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Stupid Person",
+                                "description": "A person who is not very bright",
+                                "id": "10667187"
+                            },
+                            "relation": "_derivationally_related_form",
+                            "tail": {
+                                "entity": "Unintelligent",
+                                "description": "Lacking intelligence",
+                                "id": "01336587"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Stupid",
+                                "description": "lacking intellectual acuity",
+                                "id": "00439588"
+                            },
+                            "relation": "_also_see",
+                            "tail": {
+                                "entity": "Unintelligent",
+                                "description": "Lacking intelligence",
+                                "id": "01336587"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Unintelligent",
+                                "description": "Lacking intelligence",
+                                "id": "01336587"
+                            },
+                            "relation": "_also_see",
+                            "tail": {
+                                "entity": "Stupid",
+                                "description": "lacking intellectual acuity",
+                                "id": "00439588"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Stupidity",
+                                "description": "Inability to understand or to profit from experience",
+                                "id": "01248075"
+                            },
+                            "relation": "_derivationally_related_form",
+                            "tail": {
+                                "entity": "Unintelligent",
+                                "description": "Lacking intelligence",
+                                "id": "01336587"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 6844,
+                    "old_score": 10.144,
+                    "new_score": -1.632,
+                    "note": "clique di _derivationally_related_form e also_see (che sono praticamente sinonimi)"
+                }
+            }
+        ]
+    },
+    {
+        "model": "ComplEx",
+        "dataset": "YAGO3-10",
+        "scenario": "necessary",
+        "explained_predictions": [
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Billy Halop",
+                        "description": "American actor",
+                        "id": "0"
+                    },
+                    "relation": "acted in",
+                    "tail": {
+                        "entity": "Hell\'s Kitchen",
+                        "description": "1939 film",
+                        "id": "0"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Billy Halop",
+                                "description": "American actor",
+                                "id": "0"
+                            },
+                            "relation": "acted in",
+                            "tail": {
+                                "entity": "The Angels Wash Their Faces",
+                                "description": "1939 film",
+                                "id": "0"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Billy Halop",
+                                "description": "American actor",
+                                "id": "0"
+                            },
+                            "relation": "acted in",
+                            "tail": {
+                                "entity": "On Dress Parade",
+                                "description": "1939 film",
+                                "id": "0"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Billy Halop",
+                                "description": "American actor",
+                                "id": "0"
+                            },
+                            "relation": "acted in",
+                            "tail": {
+                                "entity": "Crime School",
+                                "description": "1938 film",
+                                "id": "0"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 10,
+                    "old_score": 11.187,
+                    "new_score": 9.126,
+                    "note": "Nota: gli indizi che gli fanno dire che Billy Halop ha recitato in Hell\'s Kitchen sono altri film in cui ha recitato con lo stesso gruppo di attori"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Laotian Civil War",
+                        "description": "Civil war in Laos between the Communist Pathet Lao and the Royal Lao Government",
+                        "id": "0"
+                    },
+                    "relation": "happened in",
+                    "tail": {
+                        "entity": "North Vietnam",
+                        "description": "Socialist state in Southeast Asia that existed from 1945 to 1976",
+                        "id": "0"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "North Vietnam",
+                                "description": "Socialist country in Southeast Asia that existed from 1945 to 1976",
+                                "id": "0"
+                            },
+                            "relation": "participated in",
+                            "tail": {
+                                "entity": "Laotian Civil War",
+                                "description": "Civil war in Laos between the Communist Pathet Lao and the Royal Lao Government (1959\u20131975)",
+                                "id": "0"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Laotian Civil War",
+                                "description": "Civil war in Laos between the Communist Pathet Lao and the Royal Lao Government (1959\u20131975)",
+                                "id": "0"
+                            },
+                            "relation": "happened in",
+                            "tail": {
+                                "entity": "Kingdom Of Laos",
+                                "description": "Country in in Southeast Asia that existed between 1953 and 1975",
+                                "id": "0"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Pathet Lao",
+                                "description": "Communist political movement and organization in Laos",
+                                "id": "0"
+                            },
+                            "relation": "participated in",
+                            "tail": {
+                                "entity": "Laotian Civil War",
+                                "description": "Civil war in Laos between the Communist Pathet Lao and the Royal Lao Government (1959\u20131975)",
+                                "id": "0"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Laotian Civil War",
+                                "description": "Civil war in Laos between the Communist Pathet Lao and the Royal Lao Government (1959\u20131975)",
+                                "id": "0"
+                            },
+                            "relation": "happened in",
+                            "tail": {
+                                "entity": "South Vietnam",
+                                "description": "Country in Southeast Asia that existed from 1955 to 1975",
+                                "id": "0"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 8,
+                    "old_score": 9.956,
+                    "new_score": 7.669,
+                    "note": "Nota: gli indizi che gli fanno dire che la guerra civile del laos si \u00e8 svolta anche nel vietnam del nordsono legati al fatto che si \u00e8 svolta in quella zona coinvolgendo tutte fazioni di quella zona (incluso lo stesso vietnam del nord)"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Juan Povedano Mart\u00ednez",
+                        "description": "Spanish footballer",
+                        "id": "0"
+                    },
+                    "relation": "is affiliated to",
+                    "tail": {
+                        "entity": "UMF Selfoss",
+                        "description": "Icelandic football team",
+                        "id": "0"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Juan Povedano Mart\u00ednez",
+                                "description": "Spanish footballer",
+                                "id": "0"
+                            },
+                            "relation": "plays for",
+                            "tail": {
+                                "entity": "Umf Selfoss",
+                                "description": "Icelandic football team",
+                                "id": "0"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 80845,
+                    "old_score": 9.209,
+                    "new_score": -2.842,
+                    "note": "Nota: solito esempio plays for->is affiliated to di Yago"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Maitland",
+                        "description": "City in Florida, USA",
+                        "id": "0"
+                    },
+                    "relation": "is located in",
+                    "tail": {
+                        "entity": "Florida",
+                        "description": "American State in the Southeastern region of the USA",
+                        "id": "0"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Maitland",
+                                "description": "City in Florida, USA",
+                                "id": "0"
+                            },
+                            "relation": "is located in",
+                            "tail": {
+                                "entity": "Orange County",
+                                "description": "County in Florida, USA",
+                                "id": "0"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Maitland",
+                                "description": "City in Florida, USA",
+                                "id": "0"
+                            },
+                            "relation": "is located in",
+                            "tail": {
+                                "entity": "United States",
+                                "description": "Country primarily located in North America",
+                                "id": "0"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Maitland",
+                                "description": "City in Florida, USA",
+                                "id": "0"
+                            },
+                            "relation": "is located in",
+                            "tail": {
+                                "entity": "Orange County",
+                                "description": "County in Florida, USA",
+                                "id": "0"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 18,
+                    "old_score": 8.906,
+                    "new_score": 4.341,
+                    "note": "Nota: orange_county_florida e orange_county_(florida) sono due entit\u00e0 diverse ma dovrebbero essere la stessa: \u00e8 un errore nel KG. A parte questo, ha senso dire che maitland sia in florida perch\u00e9 \u00e8 nella orange county della Florida (e dire USA restringe il campo)"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Naughty Dog",
+                        "description": "American first-party video game developer",
+                        "id": "0"
+                    },
+                    "relation": "is located in",
+                    "tail": {
+                        "entity": "California",
+                        "description": "State in the Western United States",
+                        "id": "0"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Naughty Dog",
+                                "description": "American first-party video game developer",
+                                "id": "0"
+                            },
+                            "relation": "is located in",
+                            "tail": {
+                                "entity": "Santa Monica",
+                                "description": "City in California, USA",
+                                "id": "0"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Naughty Dog",
+                                "description": "American first-party video game developer",
+                                "id": "0"
+                            },
+                            "relation": "created",
+                            "tail": {
+                                "entity": "Crash Bandicoot",
+                                "description": "Video game franchise originally developed as an exclusive for Sony\'s PlayStation console",
+                                "id": "0"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 2,
+                    "old_score": 7.941,
+                    "new_score": 6.655,
+                    "note": "Nota: naughty dog \u00e8 una casa di videogiochi molto famosa con base a Santa Monica, quindi viene predetta come californiana."
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Penarth",
+                        "description": "City in Wales",
+                        "id": "0"
+                    },
+                    "relation": "is located in",
+                    "tail": {
+                        "entity": "Wales",
+                        "description": "A country that is part of the United Kingdom",
+                        "id": "0"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Penarth",
+                                "description": "City in Wales",
+                                "id": "0"
+                            },
+                            "relation": "is located in",
+                            "tail": {
+                                "entity": "South Wales",
+                                "description": "A loosely defined region of Wales bordered by England to the east and by mid Wales to the north",
+                                "id": "0"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Penarth",
+                                "description": "City in Wales",
+                                "id": "0"
+                            },
+                            "relation": "is located in",
+                            "tail": {
+                                "entity": "United Kingdom",
+                                "description": "A country in Europe, off the north-western coast of the continental mainland",
+                                "id": "0"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Penarth",
+                                "description": "City in Wales",
+                                "id": "0"
+                            },
+                            "relation": "is located in",
+                            "tail": {
+                                "entity": "Glamorgan",
+                                "description": "One of the thirteen historic counties of Wales and a former administrative county of Wales.",
+                                "id": "0"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Penarth",
+                                "description": "City in Wales",
+                                "id": "0"
+                            },
+                            "relation": "is located in",
+                            "tail": {
+                                "entity": "Vale Of Glamorgan",
+                                "description": "A county borough in the south-east of Wales",
+                                "id": "0"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 3,
+                    "old_score": 9.031,
+                    "new_score": 5.244,
+                    "note": "Nota: esempio del paper"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Republic Of Genoa",
+                        "description": "A maritime republic that existed in northwest Italy in the Middle and early Modern Age",
+                        "id": "0"
+                    },
+                    "relation": "participated in",
+                    "tail": {
+                        "entity": "Battle Of Cr\u00e9cy",
+                        "description": "Battle that took place in 1346 between France and England during the Hundred Years\' War",
+                        "id": "0"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Battle Of Cr\u00e9cy",
+                                "description": "Battle that took place in 1346 between France and England during the Hundred Years\' War",
+                                "id": "0"
+                            },
+                            "relation": "happened in",
+                            "tail": {
+                                "entity": "Republic Of Genoa",
+                                "description": "A maritime republic that existed in northwest Italy in the Middle and early Modern Age",
+                                "id": "0"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 23,
+                    "old_score": 11.954,
+                    "new_score": 10.092,
+                    "note": "Nota: Genova ha partecipato alla battaglia perch\u00e9 secondo il KG \u00e8 avvenuta sul suo territorio. In realt\u00e0 non \u00e8 vero: Cr\u00e9cy \u00e8 nel nord della Francia..."
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Mauricio Almada",
+                        "description": "Argentine footballer",
+                        "id": "0"
+                    },
+                    "relation": "plays for",
+                    "tail": {
+                        "entity": "Deportivo Merlo",
+                        "description": "A football club in Buenos Aires, Argentina",
+                        "id": "0"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Mauricio Almada",
+                                "description": "Argentine footballer",
+                                "id": "0"
+                            },
+                            "relation": "is affiliated to",
+                            "tail": {
+                                "entity": "Deportivo Merlo",
+                                "description": "Argentine footballer",
+                                "id": "0"
+                            }
+                        }
+                    ],
+                    "old_rank": 1,
+                    "new_rank": 224,
+                    "old_score": 10.092,
+                    "new_score": 2.536,
+                    "note": "Nota: classico esempio is affiliated to->plays for"
+                }
+            }
+        ]
+    }
+]

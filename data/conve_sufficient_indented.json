@@ -1,0 +1,3117 @@
+[
+    {
+        "model": "ConvE",
+        "dataset": "FB15k",
+        "scenario": "sufficient",
+        "explained_predictions": [
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Grammy Award For Best Metal Performance",
+                        "description": "Award",
+                        "id": "/m/02x4wb"
+                    },
+                    "relation": "is an award won by",
+                    "original_relation_name":"/award/award_category/winners./award/award_honor/award_winner",
+                    "tail": {
+                        "entity": "Korn",
+                        "description": "Heavy Metal Band",
+                        "id": "/m/0c9l1"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Korn",
+                                "description": "Heavy Metal Band",
+                                "id": "/m/0c9l1"
+                            },
+                            "relation": "won the award",
+                            "original_relation_name":"/award/award_winner/awards_won./award/award_honor/award",
+                            "tail": {
+                                "entity": "Grammy Award For Best Metal Performance",
+                                "description": "Award",
+                                "id": "/m/02x4wb"
+                            }
+                        }
+                    ],
+                    "converted": [
+                        {
+                            "entity": {
+                                "entity": "Robert Loggia",
+                                "description": "American actor",
+                                "id": "/m/02sh8y"
+                            },
+                            "original_rank": 9531,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Jefferson County",
+                                "description": "County in Alabama",
+                                "id": "/m/0p03t"
+                            },
+                            "original_rank": 3886,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Tuvalu National Football Team",
+                                "description": "Tuvaluan football team",
+                                "id": "/m/0fjcgg"
+                            },
+                            "original_rank": 2455,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Colchester",
+                                "description": "Town in england",
+                                "id": "/m/01n4nd"
+                            },
+                            "original_rank": 940,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Insurgency In Khyber Pakhtunkhwa",
+                                "description": "War in northwestern Pakistan",
+                                "id": "/m/09x7p1"
+                            },
+                            "original_rank": 1154,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Emir Kusturica",
+                                "description": "Serbian filmmaker",
+                                "id": "/m/027jq2"
+                            },
+                            "original_rank": 5107,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Isoleucine",
+                                "description": "Aminoacid",
+                                "id": "/m/0h1vg"
+                            },
+                            "original_rank": 1220,
+                            "new_rank": 1
+                        }
+                    ],
+                    "note": "classico fatto inverso di FB15k"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Morgan Creek Entertainment",
+                        "description": "Film company",
+                        "id": "/m/031rp3"
+                    },
+                    "relation": "is the employer of the person",
+                    "original_relation_name":"/business/employer/employees./business/employment_tenure/person",
+                    "tail": {
+                        "entity": "James G. Robinson",
+                        "description": "American Film producer",
+                        "id": "/m/03qncl3"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "James G. Robinson",
+                                "description": "American film producer",
+                                "id": "/m/03qncl3"
+                            },
+                            "relation": "has been an employee for",
+                            "original_relation_name":"/people/person/employment_history./business/employment_tenure/company",
+                            "tail": {
+                                "entity": "Morgan Creek Entertainment",
+                                "description": "Film company",
+                                "id": "/m/031rp3"
+                            }
+                        }
+                    ],
+                    "converted": [
+                        {
+                            "entity": {
+                                "entity": "John Boorman",
+                                "description": "British film director",
+                                "id": "/m/02f93t"
+                            },
+                            "original_rank": 227,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Hattiesburg",
+                                "description": "City in Mississippi",
+                                "id": "/m/0yx74"
+                            },
+                            "original_rank": 5985,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Wollongong",
+                                "description": "City in Australia",
+                                "id": "/m/01j12w"
+                            },
+                            "original_rank": 596,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Charles Lemaire",
+                                "description": "American costume designer",
+                                "id": "/m/0dg3jz"
+                            },
+                            "original_rank": 758,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Skyteam",
+                                "description": "Airline alliance",
+                                "id": "/m/01x4x4"
+                            },
+                            "original_rank": 1840,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Jim Belushi",
+                                "description": "American actor",
+                                "id": "/m/01wyzyl"
+                            },
+                            "original_rank": 385,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "National Film Board Of Canada",
+                                "description": "Canadian film distributor",
+                                "id": "/m/014l4w"
+                            },
+                            "original_rank": 1843,
+                            "new_rank": 1
+                        }
+                    ],
+                    "note": "classico fatto inverso di FB15k"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Glenn Ford",
+                        "description": "Canadian-american actor",
+                        "id": "/m/02_01w"
+                    },
+                    "relation": "is a celebrity with a romantic relationship with",
+                    "original_relation_name":"/celebrities/celebrity/sexual_relationships./celebrities/romantic_relationship/celebrity",
+                    "tail": {
+                        "entity": "Laraine Day",
+                        "description": "American actress",
+                        "id": "/m/08b8vd"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Laraine Day",
+                                "description": "American actress",
+                                "id": "/m/08b8vd"
+                            },
+                            "relation": "is a celebrity with a romantic relationship with",
+                            "original_relation_name":"/celebrities/celebrity/sexual_relationships./celebrities/romantic_relationship/celebrity",
+                            "tail": {
+                                "entity": "Glenn Ford",
+                                "description": "Canadian-american actor",
+                                "id": "/m/02_01w"
+                            }
+                        }
+                    ],
+                    "converted": [
+                        {
+                            "entity": {
+                                "entity": "Dharmendra",
+                                "description": "Indian actor",
+                                "id": "/m/02n1gr"
+                            },
+                            "original_rank": 58,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "SV Waldhof Mannheim 07",
+                                "description": "German football team",
+                                "id": "/m/09cd3s"
+                            },
+                            "original_rank": 211,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "PFC Beroe Stara Zagora",
+                                "description": "Bulgarian football team",
+                                "id": "/m/073hhn"
+                            },
+                            "original_rank": 92,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Activism",
+                                "description": "Political ideology",
+                                "id": "/m/0xzm"
+                            },
+                            "original_rank": 1059,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Tony Todd",
+                                "description": "American actor",
+                                "id": "/m/045gzq"
+                            },
+                            "original_rank": 3008,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Wiesbaden",
+                                "description": "City in Germany",
+                                "id": "/m/0bp_7"
+                            },
+                            "original_rank": 1302,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Cuba",
+                                "description": "Country in the Caribbean",
+                                "id": "/m/0d04z6"
+                            },
+                            "original_rank": 2229,
+                            "new_rank": 1
+                        }
+                    ],
+                    "note": "classica relazione simmetrica di FB15k"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Anjelica Huston",
+                        "description": "American actress",
+                        "id": "/m/01j5ts"
+                    },
+                    "relation": "is an actor that has performed in film",
+                    "original_relation_name":"/film/actor/film./film/performance/film",
+                    "tail": {
+                        "entity": "Addams Family Values",
+                        "description": "1993 film",
+                        "id": "/m/03kxj2"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Addams Family Values",
+                                "description": "1993 film",
+                                "id": "/m/03kxj2"
+                            },
+                            "relation": "is a film starring the actor",
+                            "original_relation_name":"/film/film/starring./film/performance/actor",
+                            "tail": {
+                                "entity": "Anjelica Huston",
+                                "description": "American actress",
+                                "id": "/m/01j5ts"
+                            }
+                        }
+                    ],
+                    "converted": [
+                        {
+                            "entity": {
+                                "entity": "American Airlines",
+                                "description": "Airline",
+                                "id": "/m/0z07"
+                            },
+                            "original_rank": 619,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "CD Guadalajara",
+                                "description": "Spanish football club",
+                                "id": "/m/02w59b"
+                            },
+                            "original_rank": 793,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "University Of South Dakota",
+                                "description": "Public university in Vermillion, South Dakota",
+                                "id": "/m/01ngz1"
+                            },
+                            "original_rank": 577,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Kent",
+                                "description": "English non-metropolitan county",
+                                "id": "/m/048kw"
+                            },
+                            "original_rank": 2675,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Kidderminster Harriers FC",
+                                "description": "English football club",
+                                "id": "/m/02b15x"
+                            },
+                            "original_rank": 548,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Touch And Go Records",
+                                "description": "Independent record label",
+                                "id": "/m/03qwyc"
+                            },
+                            "original_rank": 654,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Socialite",
+                                "description": "A person with high social position",
+                                "id": "/m/03gkb0"
+                            },
+                            "original_rank": 753,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Raggamuffin",
+                                "description": "Music genre",
+                                "id": "/m/06czq"
+                            },
+                            "original_rank": 880,
+                            "new_rank": 1
+                        }
+                    ],
+                    "note": "classico fatto inverso di FB15k"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Anna Karenina",
+                        "description": "2012 film",
+                        "id": "/m/0gy7bj4"
+                    },
+                    "relation": "is a film distributed by",
+                    "original_relation_name":"/film/film/distributors./film/film_film_distributor_relationship/distributor",
+                    "tail": {
+                        "entity": "Focus Features",
+                        "description": "Film company",
+                        "id": "/m/024rbz"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Focus Features",
+                                "description": "Film company",
+                                "id": "/m/024rbz"
+                            },
+                            "relation": "have distributed the film",
+                            "original_relation_name":"/film/film_distributor/films_distributed./film/film_film_distributor_relationship/film",
+                            "tail": {
+                                "entity": "Anna Karenina",
+                                "description": "2012 film",
+                                "id": "/m/0gy7bj4"
+                            }
+                        }
+                    ],
+                    "converted": [
+                        {
+                            "entity": {
+                                "entity": "Crash",
+                                "description": "1996 film",
+                                "id": "/m/06kl78"
+                            },
+                            "original_rank": 6,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Taken",
+                                "description": "2008 film",
+                                "id": "/m/03mgx6z"
+                            },
+                            "original_rank": 27,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Adolphe Menjou",
+                                "description": "American actor",
+                                "id": "/m/012c6j"
+                            },
+                            "original_rank": 78,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Houston Texans",
+                                "description": "American football team",
+                                "id": "/m/03lsq"
+                            },
+                            "original_rank": 19,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "John Fogerty",
+                                "description": "American musician",
+                                "id": "/m/016s_5"
+                            },
+                            "original_rank": 12,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Intel",
+                                "description": "Semiconductor company",
+                                "id": "/m/03s7h"
+                            },
+                            "original_rank": 30,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Jude Ciccolella",
+                                "description": "American actor",
+                                "id": "/m/05dtwm"
+                            },
+                            "original_rank": 19,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Mary Kay Place",
+                                "description": "American actress",
+                                "id": "/m/053y4h"
+                            },
+                            "original_rank": 7434,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Progressive House",
+                                "description": "Music genre",
+                                "id": "/m/02w6s3"
+                            },
+                            "original_rank": 20,
+                            "new_rank": 1
+                        }
+                    ],
+                    "note": "classico fatto inverso di FB15k"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "The Gathering Storm",
+                        "description": "Television film",
+                        "id": "/m/05z43v"
+                    },
+                    "relation": "is a film starring the actor",
+                    "original_relation_name":"/film/film/starring./film/performance/actor",
+                    "tail": {
+                        "entity": "Albert Finney",
+                        "description": "Actor",
+                        "id": "/m/0b_dy"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Albert Finney",
+                                "description": "Actor",
+                                "id": "/m/0b_dy"
+                            },
+                            "relation": "was nominated for an award thanks to this work",
+                            "original_relation_name":"/award/award_nominee/award_nominations./award/award_nomination/nominated_for",
+                            "tail": {
+                                "entity": "The Gathering Storm",
+                                "description": "Television film",
+                                "id": "/m/05z43v"
+                            }
+                        }
+                    ],
+                    "converted": [
+                        {
+                            "entity": {
+                                "entity": "American Recordings",
+                                "description": "Record label",
+                                "id": "/m/015mlw"
+                            },
+                            "original_rank": 136,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "FC Vaduz",
+                                "description": "Liechtenstein football club",
+                                "id": "/m/03fd8x"
+                            },
+                            "original_rank": 972,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "House Of Stuart",
+                                "description": "Royal house",
+                                "id": "/m/01lkky"
+                            },
+                            "original_rank": 685,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "David Alan Grier",
+                                "description": "American actor",
+                                "id": "/m/03xx9l"
+                            },
+                            "original_rank": 9286,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Kaizer Chiefs FC",
+                                "description": "South-African Football club",
+                                "id": "/m/01xbp7"
+                            },
+                            "original_rank": 716,
+                            "new_rank": 1
+                        }
+                    ],
+                    "note": "Poich\u00e9 l attore \u00e8 stato nominato per un premio per quel film, ha recitato in quel film"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Jule Styne",
+                        "description": "English-american songwriter",
+                        "id": "/m/01r6jt2"
+                    },
+                    "relation": "lived in",
+                    "original_relation_name":"/people/person/places_lived./people/place_lived/location",
+                    "tail": {
+                        "entity": "London",
+                        "description": "Capital of the United Kingdom",
+                        "id": "/m/0b1t1"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "London",
+                                "description": "Capital of the United Kingdom",
+                                "id": "/m/0b1t1"
+                            },
+                            "relation": "is the location where this person was born",
+                            "original_relation_name":"/location/location/people_born_here",
+                            "tail": {
+                                "entity": "Jule Styne",
+                                "description": "English-american songwriter",
+                                "id": "/m/01r6jt2"
+                            }
+                        }
+                    ],
+                    "converted": [
+                        {
+                            "entity": {
+                                "entity": "Shamrock Rovers FC",
+                                "description": "Irish football club",
+                                "id": "/m/04knvh"
+                            },
+                            "original_rank": 4,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Dame",
+                                "description": "Chivalric title",
+                                "id": "/m/08gd_r"
+                            },
+                            "original_rank": 7,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Harry Shum Jr.",
+                                "description": "Costa Rican-american actor",
+                                "id": "/m/0806vbn"
+                            },
+                            "original_rank": 30,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Hugo Award For Best Short Story",
+                                "description": "Award",
+                                "id": "/m/0262zm"
+                            },
+                            "original_rank": 2415,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Writers Guild Of America Awards 2007",
+                                "description": "Award ceremony",
+                                "id": "/m/03gt46z"
+                            },
+                            "original_rank": 115,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "2nd United States Congress",
+                                "description": "Instane of Congress in the US history",
+                                "id": "/m/01grnp"
+                            },
+                            "original_rank": 15,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Magic Mike",
+                                "description": "2012 film",
+                                "id": "/m/0h63gl9"
+                            },
+                            "original_rank": 72,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Kwazulu-Natal",
+                                "description": "Province of South Africa",
+                                "id": "/m/01bh3l"
+                            },
+                            "original_rank": 2,
+                            "new_rank": 1
+                        }
+                    ],
+                    "note": "Ci ha vissuto perch\u00e9 \u00e8 nato l\u00ec"
+                }
+            }
+        ]
+    },
+    {
+        "model": "ConvE",
+        "dataset": "WN18",
+        "scenario": "sufficient",
+        "explained_predictions": [
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Productive",
+                        "description": "Producing or capable of producing",
+                        "id": "01865197"
+                    },
+                    "relation": "_also_see",
+                    "tail": {
+                        "entity": "Originative",
+                        "description": "Having the ability or power to create",
+                        "id": "00643250"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Originative",
+                                "description": "Having the ability or power to create",
+                                "id": "00643250"
+                            },
+                            "relation": "_also_see",
+                            "tail": {
+                                "entity": "Productive",
+                                "description": "Producing or capable of producing",
+                                "id": "01865197"
+                            }
+                        }
+                    ],
+                    "converted": [
+                        {
+                            "entity": {
+                                "entity": "Passivism",
+                                "description": "The doctrine that all violence is unjustifiable",
+                                "id": "05965586"
+                            },
+                            "original_rank": 417,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "State",
+                                "description": "A politically organized body of people under a single government",
+                                "id": "08544813"
+                            },
+                            "original_rank": 10702,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "To Abstract",
+                                "description": "To give an abstract idea of something",
+                                "id": "01008288"
+                            },
+                            "original_rank": 5362,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Vilifier",
+                                "description": "One who attacks the reputation of another by slander or libel",
+                                "id": "09999135"
+                            },
+                            "original_rank": 6528,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Mischief",
+                                "description": "The quality or nature of being harmful or evil",
+                                "id": "04846533"
+                            },
+                            "original_rank": 2573,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Medusoid",
+                                "description": "Coelenterate form with a gelatinous umbrella-shaped body and tentacles",
+                                "id": "01910252"
+                            },
+                            "original_rank": 153,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Genus Disa",
+                                "description": "In botanics, genus of showy tropical african terrestrial orchids",
+                                "id": "12059479"
+                            },
+                            "original_rank": 111,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Whist",
+                                "description": "A card game for four players who form two partnerships",
+                                "id": "00496167"
+                            },
+                            "original_rank": 203,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Interruption",
+                                "description": "An act of delaying or interrupting the continuity",
+                                "id": "07367812"
+                            },
+                            "original_rank": 18070,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Dissolution",
+                                "description": "Separation into component parts",
+                                "id": "00215314"
+                            },
+                            "original_rank": 4211,
+                            "new_rank": 1
+                        }
+                    ],
+                    "note": "classico esempio di relazione simmetrica in WN18"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Culminate",
+                        "description": "Reach the highest or most decisive point",
+                        "id": "02021773"
+                    },
+                    "relation": "_derivationally_related_form",
+                    "tail": {
+                        "entity": "Culmination",
+                        "description": "A final climactic stage",
+                        "id": "06373747"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Culmination",
+                                "description": "A final climactic stage",
+                                "id": "06373747"
+                            },
+                            "relation": "_derivationally_related_form",
+                            "tail": {
+                                "entity": "Culminate",
+                                "description": "Reach the highest or most decisive point",
+                                "id": "02021773"
+                            }
+                        }
+                    ],
+                    "converted": [
+                        {
+                            "entity": {
+                                "entity": "Trust Busting",
+                                "description": "In law, government activities to oppose corporate trusts and monopolies",
+                                "id": "01126335"
+                            },
+                            "original_rank": 37956,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Relief",
+                                "description": "The condition of being comfortable or relieved after distress",
+                                "id": "00354884"
+                            },
+                            "original_rank": 7072,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Crusher",
+                                "description": "A device that crushes something",
+                                "id": "03141702"
+                            },
+                            "original_rank": 8657,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Sweetening",
+                                "description": "Something added to foods to make them taste sweeter",
+                                "id": "07858595"
+                            },
+                            "original_rank": 12447,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Pleat",
+                                "description": "Any of various types of fold formed by doubling fabric back upon itself and then pressing or stitching into shape",
+                                "id": "03965907"
+                            },
+                            "original_rank": 28481,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Peramelidae Family",
+                                "description": "In zoology, the family of marsupials that includes bandicoots",
+                                "id": "01876180"
+                            },
+                            "original_rank": 18527,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "To Fracture",
+                                "description": "To become fractured",
+                                "id": "00108303"
+                            },
+                            "original_rank": 5172,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Prospero Lambertini",
+                                "description": "Pope who denounced cruelty to indigenous South American peoples (1675-1758)",
+                                "id": "10844031"
+                            },
+                            "original_rank": 33093,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Santiago De Chile",
+                                "description": "The capital and largest city of Chile",
+                                "id": "08721559"
+                            },
+                            "original_rank": 38965,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Dyslectic",
+                                "description": "A person who has dyslexia",
+                                "id": "10040617"
+                            },
+                            "original_rank": 1631,
+                            "new_rank": 1
+                        }
+                    ],
+                    "note": "classico esempio di relazione simmetrica in WN18"
+                }
+            }
+        ]
+    },
+    {
+        "model": "ConvE",
+        "dataset": "FB15k-237",
+        "scenario": "sufficient",
+        "explained_predictions": [
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "The King\'s Speech",
+                        "description": "2010 film",
+                        "id": "/m/09gq0x5"
+                    },
+                    "relation": "is a film in which the crew featured the role",
+                    "original_relation_name":"/film/film/other_crew./film/film_crew_gig/film_crew_role",
+                    "tail": {
+                        "entity": "Production Sound Mixer",
+                        "description": "Profession",
+                        "id": "/m/0ch6mp2"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "The King\'s Speech",
+                                "description": "2010 film",
+                                "id": "/m/09gq0x5"
+                            },
+                            "relation": "is a film that was released in medium",
+                            "original_relation_name":"/film/film/release_date_s./film/film_regional_release_date/film_release_distribution_medium",
+                            "tail": {
+                                "entity": "DVD",
+                                "description": "Film format",
+                                "id": "/m/029j_"
+                            }
+                        }
+                    ],
+                    "converted": [
+                        {
+                            "entity": {
+                                "entity": "Muncie",
+                                "description": "City in Indiana",
+                                "id": "/m/0sl2w"
+                            },
+                            "original_rank": 2,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Herman Melville",
+                                "description": "American novelist",
+                                "id": "/m/03jxw"
+                            },
+                            "original_rank": 6,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Mercer University",
+                                "description": "Private university in Macon, Georgia",
+                                "id": "/m/03wv2g"
+                            },
+                            "original_rank": 4,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Lucien Ballard",
+                                "description": "American cinematographer",
+                                "id": "/m/06vdh8"
+                            },
+                            "original_rank": 2,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Elie Samaha",
+                                "description": "Film producer",
+                                "id": "/m/04zwtdy"
+                            },
+                            "original_rank": 3,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Serbian Language",
+                                "description": "Spoken language",
+                                "id": "/m/0k0sb"
+                            },
+                            "original_rank": 2,
+                            "new_rank": 1
+                        }
+                    ],
+                    "note": "tutti i film in DVD del dataset hanno un Production Sound Mixer (controllare per sicurezza)"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "St. John\'s University",
+                        "description": "Private university in Queens, New York",
+                        "id": "/m/0gx159f"
+                    },
+                    "relation": "is an organization registered at the agency",
+                    "original_relation_name":"/organization/non_profit_organization/registered_with./organization/non_profit_registration/registering_agency",
+                    "tail": {
+                        "entity": "Internal Revenue Service",
+                        "description": "Government department",
+                        "id": "/m/03z19"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "St. John\'s University",
+                                "description": "Private university in Queens, New York",
+                                "id": "/m/0gx159f"
+                            },
+                            "relation": "is an organization whose endowment is measured in the currency",
+                            "original_relation_name":"/organization/endowed_organization/endowment./measurement_unit/dated_money_value/currency",
+                            "tail": {
+                                "entity": "United States Dollar",
+                                "description": "Currency",
+                                "id": "/m/09nqf"
+                            }
+                        }
+                    ],
+                    "converted": [
+                        {
+                            "entity": {
+                                "entity": "Orange",
+                                "description": "Colour",
+                                "id": "/m/0xmqf"
+                            },
+                            "original_rank": 2,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Chancellor",
+                                "description": "Job title",
+                                "id": "/m/07xl34"
+                            },
+                            "original_rank": 2,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Comedy-Drama",
+                                "description": "Literary genre",
+                                "id": "/m/01t_vv"
+                            },
+                            "original_rank": 8,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Cinematographer",
+                                "description": "Profession",
+                                "id": "/m/0dgd_"
+                            },
+                            "original_rank": 20,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Hip Hop Music",
+                                "description": "Music genre",
+                                "id": "/m/0glt670"
+                            },
+                            "original_rank": 2,
+                            "new_rank": 1
+                        }
+                    ],
+                    "note": "la dotazione dell\'universit\u00e0 \u00e8 in US dollars, quindi l\'universit\u00e0 \u00e8 registrata presso l\'agenzia delle entrate degli US"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "PFC Krylia Sovetov Samara",
+                        "description": "Russian football club",
+                        "id": "/m/04v9wn"
+                    },
+                    "relation": "are a sports team identified by the color",
+                    "original_relation_name":"/sports/sports_team/colors",
+                    "tail": {
+                        "entity": "White",
+                        "description": "Color",
+                        "id": "/m/083jv"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "PFC Krylia Sovetov Samara",
+                                "description": "Russian football club",
+                                "id": "/m/04v9wn"
+                            },
+                            "relation": "are a sports team identified by the color",
+                            "original_relation_name":"/sports/sports_team/colors",
+                            "tail": {
+                                "entity": "Blue",
+                                "description": "Colour",
+                                "id": "/m/01g5v"
+                            }
+                        }
+                    ],
+                    "converted": [
+                        {
+                            "entity": {
+                                "entity": "American Graffiti",
+                                "description": "1973 film",
+                                "id": "/m/0hv8w"
+                            },
+                            "original_rank": 9,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Hokkaido",
+                                "description": "Japanese prefecture",
+                                "id": "/m/0fxrk"
+                            },
+                            "original_rank": 9,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Treasure Planet",
+                                "description": "2002 film",
+                                "id": "/m/02_fm2"
+                            },
+                            "original_rank": 2,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Nirvana",
+                                "description": "Rock band",
+                                "id": "/m/0b1zz"
+                            },
+                            "original_rank": 2,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Alice In Wonderland",
+                                "description": "1985 film",
+                                "id": "/m/085bd1"
+                            },
+                            "original_rank": 137,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Murali",
+                                "description": "Indian film actor",
+                                "id": "/m/02qy3py"
+                            },
+                            "original_rank": 2,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Rounder Records",
+                                "description": "Independent record label",
+                                "id": "/m/043ljr"
+                            },
+                            "original_rank": 2,
+                            "new_rank": 1
+                        }
+                    ],
+                    "note": "Apparentemente, se hai nella tua bandiera il colore bianco hai anche sempre il colore blu (controllare nel dataset quante volte sono insieme"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "The Sessions",
+                        "description": "2012 film",
+                        "id": "/m/0gyfp9c"
+                    },
+                    "relation": "is a film that was released in region",
+                    "original_relation_name":"/film/film/release_date_s./film/film_regional_release_date/film_release_region",
+                    "tail": {
+                        "entity": "Serbia",
+                        "description": "Country in the Balkans",
+                        "id": "/m/077qn"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "The Sessions",
+                                "description": "2012 film",
+                                "id": "/m/0gyfp9c"
+                            },
+                            "relation": "is a film that was released in region",
+                            "original_relation_name":"/film/film/release_date_s./film/film_regional_release_date/film_release_region",
+                            "tail": {
+                                "entity": "North Macedonia",
+                                "description": "Country in the Balkans",
+                                "id": "/m/0bjv6"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "The Sessions",
+                                "description": "2012 film",
+                                "id": "/m/0gyfp9c"
+                            },
+                            "relation": "is a film that was released in region",
+                            "original_relation_name":"/film/film/release_date_s./film/film_regional_release_date/film_release_region",
+                            "tail": {
+                                "entity": "Hungary",
+                                "description": "Country in Eastern Europe",
+                                "id": "/m/03gj2"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "The Sessions",
+                                "description": "2012 film",
+                                "id": "/m/0gyfp9c"
+                            },
+                            "relation": "is a film that was released in region",
+                            "original_relation_name":"/film/film/release_date_s./film/film_regional_release_date/film_release_region",
+                            "tail": {
+                                "entity": "Slovenia",
+                                "description": "Country in the Balkans",
+                                "id": "/m/06t8v"
+                            }
+                        }
+                    ],
+                    "converted": [],
+                    "note": "A movie has been released in Serbia because it has been released in other neighbouring countries (in the Balkans)"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Jamaica",
+                        "description": "Country in the Caribbean",
+                        "id": "/m/03_r3"
+                    },
+                    "relation": "has administrative type",
+                    "original_relation_name":"/base/aareas/schema/administrative_area/administrative_area_type",
+                    "tail": {
+                        "entity": "Sovereign State",
+                        "description": "Political entity with supreme legitimate authority over a certain territory",
+                        "id": "/m/0hzc9wc"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Jamaica",
+                                "description": "Country in the caribbean",
+                                "id": "/m/03_r3"
+                            },
+                            "relation": "is a member of the organization",
+                            "original_relation_name":"/organization/organization_member/member_of./organization/organization_membership/organization",
+                            "tail": {
+                                "entity": "Commonwealth Of Nations",
+                                "description": "Intergovernmental political organization",
+                                "id": "/m/0j7v_"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Jamaica",
+                                "description": "Country in the Caribbean",
+                                "id": "/m/03_r3"
+                            },
+                            "relation": "is a member of the organization",
+                            "original_relation_name":"/organization/organization_member/member_of./organization/organization_membership/organization",
+                            "tail": {
+                                "entity": "United Nations",
+                                "description": "Intergovernmental political organization",
+                                "id": "/m/07t65"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Jamaica",
+                                "description": "Country in the Caribbean",
+                                "id": "/m/03_r3"
+                            },
+                            "relation": "is a member of the organization",
+                            "original_relation_name":"/organization/organization_member/member_of./organization/organization_membership/organization",
+                            "tail": {
+                                "entity": "Organisation Of African, Caribbean And Pacific States",
+                                "description": "Intergovernmental political organization",
+                                "id": "/m/041288"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Governor-General",
+                                "description": "Vice-regal representative of a monarch",
+                                "id": "/m/0fj45"
+                            },
+                            "relation": "is an office category with jurisdiction over",
+                            "original_relation_name":"/government/government_office_category/officeholders./government/government_position_held/jurisdiction_of_office",
+                            "tail": {
+                                "entity": "Jamaica",
+                                "description": "Country in the Caribbean",
+                                "id": "/m/03_r3"
+                            }
+                        }
+                    ],
+                    "converted": [
+                        {
+                            "entity": {
+                                "entity": "Grammy Award For Best Pop Performance By A Duo Or Group With Vocals",
+                                "description": "Award",
+                                "id": "/m/01c9jp"
+                            },
+                            "original_rank": 4,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Streaming Media",
+                                "description": "Product distribution method",
+                                "id": "/m/0735l"
+                            },
+                            "original_rank": 4,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Primetime Emmy Award For Outstanding Supporting Actress In A Drama Series",
+                                "description": "Award",
+                                "id": "/m/0bdx29"
+                            },
+                            "original_rank": 2,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Psychological Thriller",
+                                "description": "Film genre",
+                                "id": "/m/09blyk"
+                            },
+                            "original_rank": 14,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Primetime Creative Arts Emmy Award For Outstanding Guest Actress In A Drama Series",
+                                "description": "Award",
+                                "id": "/m/0gkts9"
+                            },
+                            "original_rank": 2,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Pacific Time Zone",
+                                "description": "Time zone",
+                                "id": "/m/02lcqs"
+                            },
+                            "original_rank": 7,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Grammy Award For Best Contemporary Instrumental Album",
+                                "description": "Award",
+                                "id": "/m/03qpp9"
+                            },
+                            "original_rank": 2,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Grammy Award For Best Pop Instrumental Performance",
+                                "description": "Award",
+                                "id": "/m/02gdjb"
+                            },
+                            "original_rank": 11,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Filmflex",
+                                "description": "Film Company",
+                                "id": "/m/03xq0f"
+                            },
+                            "original_rank": 2,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Grammy Award For Best Traditional Folk Album",
+                                "description": "Award",
+                                "id": "/m/02ddqh"
+                            },
+                            "original_rank": 2,
+                            "new_rank": 1
+                        }
+                    ],
+                    "note": "La Jamaica \u00e8 uno stato perch\u00e9 fa parte di organizzazioni di stati e perch\u00e9 ha un proprio vicegovernatore della regina Elisabetta"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Charles County",
+                        "description": "County in Maryland",
+                        "id": "/m/0fr61"
+                    },
+                    "relation": "is a location in the time zone",
+                    "original_relation_name":"/location/location/time_zones",
+                    "tail": {
+                        "entity": "Eastern Time Zone",
+                        "description": "Time zone",
+                        "id": "/m/02hcv8"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Charles County",
+                                "description": "County in Maryland",
+                                "id": "/m/0fr61"
+                            },
+                            "relation": "is a location neighboring to",
+                            "original_relation_name":"/location/location/adjoin_s./location/adjoining_relationship/adjoins",
+                            "tail": {
+                                "entity": "Fairfax County",
+                                "description": "County in Virginia",
+                                "id": "/m/0mnz0"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Maryland",
+                                "description": "Mid-Atlantic American State",
+                                "id": "/m/04rrd"
+                            },
+                            "relation": "is a location that contains",
+                            "original_relation_name":"/location/location/contains",
+                            "tail": {
+                                "entity": "Charles County",
+                                "description": "County in Maryland",
+                                "id": "/m/0fr61"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Charles County",
+                                "description": "County in Maryland",
+                                "id": "/m/0fr61"
+                            },
+                            "relation": "is a location neighboring to",
+                            "original_relation_name":"/location/location/adjoin_s./location/adjoining_relationship/adjoins",
+                            "tail": {
+                                "entity": "Prince George\'s County",
+                                "description": "County in Maryland",
+                                "id": "/m/0cc1v"
+                            }
+                        }
+                    ],
+                    "converted": [
+                        {
+                            "entity": {
+                                "entity": "Emanuel Azenberg",
+                                "description": "American theatre producer",
+                                "id": "/m/0b7xl8"
+                            },
+                            "original_rank": 2,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "2002 Major League Baseball Draft",
+                                "description": "Baseball draft",
+                                "id": "/m/02z6872"
+                            },
+                            "original_rank": 2,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Ricky Martin",
+                                "description": "American-Puerto Rican-Spanish singer-songwriter",
+                                "id": "/m/01w61th"
+                            },
+                            "original_rank": 4,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Greek Orthodox Church",
+                                "description": "Church",
+                                "id": "/m/01gr6h"
+                            },
+                            "original_rank": 2,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Hebrew University Of Jerusalem",
+                                "description": "Israeli university in Jerusalem",
+                                "id": "/m/01hc1j"
+                            },
+                            "original_rank": 2,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Ian Fleming",
+                                "description": "British writer",
+                                "id": "/m/0fx02"
+                            },
+                            "original_rank": 2,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Los Lobos",
+                                "description": "Rock band",
+                                "id": "/m/015cxv"
+                            },
+                            "original_rank": 2,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Philosophy Of Mind",
+                                "description": "Field of study",
+                                "id": "/m/0gt_hv"
+                            },
+                            "original_rank": 2,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Set Decorator",
+                                "description": "Profession",
+                                "id": "/m/089fss"
+                            },
+                            "original_rank": 21,
+                            "new_rank": 1
+                        }
+                    ],
+                    "note": "informazioni geografiche ti permettono di dire che sei nella Eastern Time Zone"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "John Williams",
+                        "description": "American composer",
+                        "id": "/m/0146pg"
+                    },
+                    "relation": "has profession",
+                    "original_relation_name":"/people/person/profession",
+                    "tail": {
+                        "entity": "Composer",
+                        "description": "Musician who is an author of music in any form",
+                        "id": "/m/01c72t"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "John Williams",
+                                "description": "American composer",
+                                "id": "/m/0146pg"
+                            },
+                            "relation": "won the same award as",
+                            "original_relation_name":"/award/award_winner/awards_won./award/award_honor/award_winner",
+                            "tail": {
+                                "entity": "Henry Mancini",
+                                "description": "American composer",
+                                "id": "/m/01vttb9"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "John Williams",
+                                "description": "American composer",
+                                "id": "/m/0146pg"
+                            },
+                            "relation": "won the same award as",
+                            "original_relation_name":"/award/award_winner/awards_won./award/award_honor/award_winner",
+                            "tail": {
+                                "entity": "Leslie Bricusse",
+                                "description": "Composer",
+                                "id": "/m/02lfp4"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "43rd Annual Grammy Awards",
+                                "description": "Award ceremony",
+                                "id": "/m/01bx35"
+                            },
+                            "relation": "is a ceremony in which awards were won by",
+                            "original_relation_name":"/award/award_ceremony/awards_presented./award/award_honor/award_winner",
+                            "tail": {
+                                "entity": "John Williams",
+                                "description": "American composer",
+                                "id": "/m/0146pg"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "John Williams",
+                                "description": "American composer",
+                                "id": "/m/0146pg"
+                            },
+                            "relation": "was nominated for",
+                            "original_relation_name":"/award/award_nominee/award_nominations./award/award_nomination/award",
+                            "tail": {
+                                "entity": "Academy Award For Best Music (Original score)",
+                                "description": "Award",
+                                "id": "/m/0l8z1"
+                            }
+                        }
+                    ],
+                    "converted": [
+                        {
+                            "entity": {
+                                "entity": "News Corporation",
+                                "description": "Mass media company",
+                                "id": "/m/0sxdg"
+                            },
+                            "original_rank": 42,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Stearic Acid",
+                                "description": "Chemical compound",
+                                "id": "/m/02kd0rh"
+                            },
+                            "original_rank": 10,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Karl Popper",
+                                "description": "Austrian-british philosopher",
+                                "id": "/m/047g6"
+                            },
+                            "original_rank": 21,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Carlisle United FC",
+                                "description": "English football club",
+                                "id": "/m/02b149"
+                            },
+                            "original_rank": 11,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Pastor",
+                                "description": "Religious leadership title",
+                                "id": "/m/01fhsb"
+                            },
+                            "original_rank": 13,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Madison County",
+                                "description": "County in Illinois",
+                                "id": "/m/0nv99"
+                            },
+                            "original_rank": 17,
+                            "new_rank": 1
+                        }
+                    ],
+                    "note": "John Williams \u00e8 un composer perch\u00e9 ha vinto premi simili ad altri composers, e perch\u00e9 \u00e8 stato nominato e premiato per musiche"
+                }
+            }
+        ]
+    },
+    {
+        "model": "ConvE",
+        "dataset": "WN18RR",
+        "scenario": "sufficient",
+        "explained_predictions": [
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Hateful",
+                        "description": "Evoking or deserving hatred",
+                        "id": "01460421"
+                    },
+                    "relation": "_also_see",
+                    "tail": {
+                        "entity": "Hostile",
+                        "description": "Characterized by enmity or ill will",
+                        "id": "08397675"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Hostile",
+                                "description": "Characterized by enmity or ill will",
+                                "id": "08397675"
+                            },
+                            "relation": "_also_see",
+                            "tail": {
+                                "entity": "Hateful",
+                                "description": "Evoking or deserving hatred",
+                                "id": "01460421"
+                            }
+                        }
+                    ],
+                    "converted": [
+                        {
+                            "entity": {
+                                "entity": "To Recognize",
+                                "description": "To grant credentials to",
+                                "id": "02475535"
+                            },
+                            "original_rank": 312,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "To Release",
+                                "description": "To prepare and issue for public distribution or sale",
+                                "id": "00967625"
+                            },
+                            "original_rank": 32542,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Tender",
+                                "description": "Someone who waits on or tends to or attends to the needs of another",
+                                "id": "02446651"
+                            },
+                            "original_rank": 27033,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Playback",
+                                "description": "Electronic equipment to reproduce recorded material",
+                                "id": "03963294"
+                            },
+                            "original_rank": 5,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Maurice de Saxe",
+                                "description": "French marshall in the war of the Austrian succession (1696-1750)",
+                                "id": "11283300"
+                            },
+                            "original_rank": 132,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Kaki",
+                                "description": "Wading bird found in New Zealand",
+                                "id": "12771390"
+                            },
+                            "original_rank": 435,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Peeress",
+                                "description": "A woman of the peerage in Britain",
+                                "id": "10242791"
+                            },
+                            "original_rank": 49,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "To Dilapidate",
+                                "description": "To bring into a condition of decay or partial ruin by neglect or misuse",
+                                "id": "01662434"
+                            },
+                            "original_rank": 423,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "To Spud",
+                                "description": "To Produce buds, branches, or germinate",
+                                "id": "00357332"
+                            },
+                            "original_rank": 202,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Conduit",
+                                "description": "A passage through which water or electric wires can pass",
+                                "id": "03089014"
+                            },
+                            "original_rank": 163,
+                            "new_rank": 1
+                        }
+                    ],
+                    "note": "Classico esempio di relazione simmetrica in WN18RR"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Pollution",
+                        "description": "The act of contaminating or polluting",
+                        "id": "14498404"
+                    },
+                    "relation": "_derivationally_related_form",
+                    "tail": {
+                        "entity": "To Contaminate",
+                        "description": "To make radioactive by adding radioactive material",
+                        "id": "00493259"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Contaminate",
+                                "description": "To make radioactive by adding radioactive material",
+                                "id": "00493259"
+                            },
+                            "relation": "_derivationally_related_form",
+                            "tail": {
+                                "entity": "Pollution",
+                                "description": "The act of contaminating or polluting",
+                                "id": "14498404"
+                            }
+                        }
+                    ],
+                    "converted": [
+                        {
+                            "entity": {
+                                "entity": "Houseplant",
+                                "description": "Plants grown indoors for decorative purposes",
+                                "id": "13083023"
+                            },
+                            "original_rank": 25882,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "To Use Somebody",
+                                "description": "To seek or achieve an end by using to one\'s advantage",
+                                "id": "02600490"
+                            },
+                            "original_rank": 24829,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Vulnerability",
+                                "description": "The state of being vulnerable or exposed",
+                                "id": "05042871"
+                            },
+                            "original_rank": 1181,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Bond",
+                                "description": "A connection that fastens things together",
+                                "id": "13792183"
+                            },
+                            "original_rank": 40474,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Formulation",
+                                "description": "Inventing or contriving an idea formulating it mentally",
+                                "id": "07069948"
+                            },
+                            "original_rank": 7399,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "To Taint",
+                                "description": "To contaminate with a disease or microorganism",
+                                "id": "00088713"
+                            },
+                            "original_rank": 5163,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Tazicef",
+                                "description": "Parenteral cephalosporin used to treat moderate infections",
+                                "id": "02989685"
+                            },
+                            "original_rank": 32453,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Sockeye Salmon",
+                                "description": "Small salmon with red flesh",
+                                "id": "07796165"
+                            },
+                            "original_rank": 38841,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Worth",
+                                "description": "Quality that renders something desirable or valuable",
+                                "id": "05138208"
+                            },
+                            "original_rank": 35030,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Latency Stage",
+                                "description": "In freudian psychoanalysis, the fourth stage of psychosexual development",
+                                "id": "15146260"
+                            },
+                            "original_rank": 32596,
+                            "new_rank": 1
+                        }
+                    ],
+                    "note": "Classico esempio di relazione simmetrica in WN18RR"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "To Refer",
+                        "description": "To have as a meaning",
+                        "id": "00931467"
+                    },
+                    "relation": "_verb_group",
+                    "tail": {
+                        "entity": "To Denote",
+                        "description": "To be a sign or indication of",
+                        "id": "00932161"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "To denote",
+                                "description": "To be a sign or indication of",
+                                "id": "00932161"
+                            },
+                            "relation": "_verb_group",
+                            "tail": {
+                                "entity": "To Refer",
+                                "description": "To have as a meaning",
+                                "id": "00931467"
+                            }
+                        }
+                    ],
+                    "converted": [
+                        {
+                            "entity": {
+                                "entity": "Khalifah",
+                                "description": "The civil and religious leader of a muslim state",
+                                "id": "09887496"
+                            },
+                            "original_rank": 14882,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Old World Porcupine",
+                                "description": "A species of terrestrial porcupine",
+                                "id": "02346998"
+                            },
+                            "original_rank": 903,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Trench",
+                                "description": "A ditch dug as a fortification",
+                                "id": "01497458"
+                            },
+                            "original_rank": 385,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Babassu Nut",
+                                "description": "Hard-shelled nut of the babassu palm",
+                                "id": "12592839"
+                            },
+                            "original_rank": 851,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Summing Up",
+                                "description": "Concluding summary (as in presenting a case before a law court)",
+                                "id": "06469874"
+                            },
+                            "original_rank": 492,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Session",
+                                "description": "Meeting for execution of a group\'s functions",
+                                "id": "15225249"
+                            },
+                            "original_rank": 17209,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Comic",
+                                "description": "A professional performer who tells jokes and performs comical acts",
+                                "id": "09940146"
+                            },
+                            "original_rank": 853,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Fire Watching",
+                                "description": "In WW2 in Britain, the act of watching for fires started by bombs",
+                                "id": "00817507"
+                            },
+                            "original_rank": 919,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Metacentre",
+                                "description": "In shipbuilding, a point used to assess the stability of a ship",
+                                "id": "05866822"
+                            },
+                            "original_rank": 23202,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Source",
+                                "description": "A person who supplies information",
+                                "id": "10205985"
+                            },
+                            "original_rank": 1820,
+                            "new_rank": 1
+                        }
+                    ],
+                    "note": "Classico esempio di relazione simmetrica in WN18RR"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Lashkar-E-Omar",
+                        "description": "Terrorist organization in Pakistan",
+                        "id": "08030711"
+                    },
+                    "relation": "_instance_hypernym",
+                    "tail": {
+                        "entity": "Terrorist Organization",
+                        "description": "Political movement that uses terror as a weapon to achieve its goals",
+                        "id": "08392137"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Lashkar-E-Omar",
+                                "description": "Terrorist organization in Pakistan",
+                                "id": "08030711"
+                            },
+                            "relation": "_synset_domain_topic_of",
+                            "tail": {
+                                "entity": "Terrorist Act",
+                                "description": "Calculated use of violence against civilians to attain political goals",
+                                "id": "00759694"
+                            }
+                        }
+                    ],
+                    "converted": [
+                        {
+                            "entity": {
+                                "entity": "To Suspire",
+                                "description": "To heave or utter a sigh; to breathe deeply and heavily",
+                                "id": "00004032"
+                            },
+                            "original_rank": 19,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Chloride",
+                                "description": "Any compound containing a chlorine atom",
+                                "id": "15016852"
+                            },
+                            "original_rank": 186,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "To Ferry",
+                                "description": "To travel by ferry",
+                                "id": "01949218"
+                            },
+                            "original_rank": 6,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Survivor",
+                                "description": "An animal that survives in spite of adversity",
+                                "id": "10681060"
+                            },
+                            "original_rank": 6,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Fibre",
+                                "description": "Any of several elongated, threadlike cells",
+                                "id": "04620216"
+                            },
+                            "original_rank": 8,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Balaenopteridae Family",
+                                "description": "In zoology, the family of rorquals and blue whales",
+                                "id": "02064154"
+                            },
+                            "original_rank": 114,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Genus Astacus",
+                                "description": "In zoology, a genus of crayfish found in Europe and western Asia",
+                                "id": "01985331"
+                            },
+                            "original_rank": 12,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Tanganyika",
+                                "description": "A former state in east Africa; united with Zanzibar in 1964",
+                                "id": "09035305"
+                            },
+                            "original_rank": 9,
+                            "new_rank": 1
+                        }
+                    ],
+                    "note": "lashkar-e-omar \u00e8 predetto come organizzaione terroristica perch\u00e9 \u00e8 un synset nel domain degli atti terroristici"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Sadhe",
+                        "description": "The 18th letter of the hebrew alphabet",
+                        "id": "06838543"
+                    },
+                    "relation": "_hypernym",
+                    "tail": {
+                        "entity": "Letter Of The Alphabet",
+                        "description": "Conventional characters of the alphabet used to represent speech",
+                        "id": "06828818"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Hebrew Script",
+                                "description": "Semitic alphabet used since the 5th century BC for the Hebrew language",
+                                "id": "06498569"
+                            },
+                            "relation": "_has_part",
+                            "tail": {
+                                "entity": "Sadhe",
+                                "description": "The 18th letter of the hebrew alphabet",
+                                "id": "06838543"
+                            }
+                        }
+                    ],
+                    "converted": [],
+                    "note": "Non ha convertito nulla ma ha senso: Sadhe \u00e8 una letter dell\'alfabeto perch\u00e9 \u00e8 una parte dell\'hebrew script"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "North Platte River",
+                        "description": "River that rises in northern Colorado",
+                        "id": "09373716"
+                    },
+                    "relation": "_instance_hypernym",
+                    "tail": {
+                        "entity": "River",
+                        "description": "A large natural stream of water",
+                        "id": "09411430"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Wyoming",
+                                "description": "A state in the western United States",
+                                "id": "09159003"
+                            },
+                            "relation": "_has_part",
+                            "tail": {
+                                "entity": "North Platte River",
+                                "description": "River that rises in northern Colorado",
+                                "id": "09373716"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Nebraska",
+                                "description": "A mid-western state on the great plains of the United States",
+                                "id": "09109444"
+                            },
+                            "relation": "_has_part",
+                            "tail": {
+                                "entity": "North Platte River",
+                                "description": "River that rises in northern Colorado",
+                                "id": "09373716"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Colorado",
+                                "description": "A state in western United States",
+                                "id": "09067277"
+                            },
+                            "relation": "_has_part",
+                            "tail": {
+                                "entity": "North Platte River",
+                                "description": "River that rises in northern Colorado",
+                                "id": "09373716"
+                            }
+                        }
+                    ],
+                    "converted": [],
+                    "note": "Non ha convertito nulla ma ha senso: \u00e8 un fiume perch\u00e9 praticamente solo un fiume potrebbe attraversare tre stati diversi (Wyoming, Nebraska e Colorado). (Al massimo potrebbe essere anche una catena montuosa, ma controlla quante volte elementi che sono part di pi\u00f9 stati sono qualcosa di diverso da rivers in WN18RR)"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "To Vitiate",
+                        "description": "To corrupt morally or by intemperance or sensuality",
+                        "id": "02579447"
+                    },
+                    "relation": "_derivationally_related_form",
+                    "tail": {
+                        "entity": "Demoralization",
+                        "description": "Destroying the moral basis for a doctrine or policy",
+                        "id": "00272713"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Vitiate",
+                                "description": "To corrupt morally or by intemperance or sensuality",
+                                "id": "00477941"
+                            },
+                            "relation": "_derivationally_related_form",
+                            "tail": {
+                                "entity": "Subversion",
+                                "description": "Destroying someone\'s honesty or loyalty",
+                                "id": "00272448"
+                            }
+                        }
+                    ],
+                    "converted": [],
+                    "note": "ha senso: sono tutti e tre sinonimi. Quindi <<viziare>> \u00e8 sinonimo di <<corrompere moralmente>> perch\u00e9 <<corrompere moralmente>> \u00e8 sinonimo di <<sovvertire>>"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Timaliidae Family",
+                        "description": "In zoology, a family of mostly Old World passerine birds",
+                        "id": "01566386"
+                    },
+                    "relation": "_hypernym",
+                    "tail": {
+                        "entity": "Birds",
+                        "description": "In zoology, it is the class of egg-laying vertebrates with feathers and wings",
+                        "id": "01503061"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Suborder Passeres",
+                                "description": "In zoology, the suborder of typical songbirds",
+                                "id": "01524885"
+                            },
+                            "relation": "_member_meronym",
+                            "tail": {
+                                "entity": "Timaliidae",
+                                "description": "In zoology, a family of mostly Old World passerine birds",
+                                "id": "01566386"
+                            }
+                        }
+                    ],
+                    "converted": [
+                        {
+                            "entity": {
+                                "entity": "Precambrian Period",
+                                "description": "The eon following the Hadean time and preceding the Phanerozoic eon",
+                                "id": "15128711"
+                            },
+                            "original_rank": 31699,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Skid Lid",
+                                "description": "A crash helmet",
+                                "id": "04229107"
+                            },
+                            "original_rank": 7129,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Radio Station",
+                                "description": "Station for producting and transmitting AM or FM radio broadcasts",
+                                "id": "04044119"
+                            },
+                            "original_rank": 32478,
+                            "new_rank": 1
+                        }
+                    ],
+                    "note": "Ha senso: i timaliidae sono un caso particolare di uccelli perch\u00e9 i passeri sono un sottocaso dei timaliidae"
+                }
+            }
+        ]
+    },
+    {
+        "model": "ConvE",
+        "dataset": "YAGO3-10",
+        "scenario": "sufficient",
+        "explained_predictions": [
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Emiliano Dudar",
+                        "description": "Argentine football player",
+                        "id": "0"
+                    },
+                    "relation": "is affiliated to",
+                    "tail": {
+                        "entity": "Club Libertad",
+                        "description": "Paraguayan football team",
+                        "id": "0"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Emiliano Dudar",
+                                "description": "Argentine football player",
+                                "id": "0"
+                            },
+                            "relation": "plays for",
+                            "tail": {
+                                "entity": "Club Libertad",
+                                "description": "Paraguayan football team",
+                                "id": "0"
+                            }
+                        }
+                    ],
+                    "converted": [
+                        {
+                            "entity": {
+                                "entity": "Hobart Henley",
+                                "description": "American silent film actor, director, screenwriter and producer",
+                                "id": "0"
+                            },
+                            "original_rank": 7991,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Gliwice County",
+                                "description": "Unit of territorial administration in southern Poland",
+                                "id": "0"
+                            },
+                            "original_rank": 42518,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Andriy Yarmolenko",
+                                "description": "Ukrainian football player",
+                                "id": "0"
+                            },
+                            "original_rank": 109551,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Pat O\'Brien",
+                                "description": "American film actor",
+                                "id": "0"
+                            },
+                            "original_rank": 117622,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Valerie French",
+                                "description": "English film, television and stage performer",
+                                "id": "0"
+                            },
+                            "original_rank": 122224,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Razavi Khorasan",
+                                "description": "Province located in nort-heastern Iran",
+                                "id": "0"
+                            },
+                            "original_rank": 115904,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Stay Alive",
+                                "description": "2006 film",
+                                "id": "0"
+                            },
+                            "original_rank": 102212,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Anagennisi Giannitsa FC",
+                                "description": "Greek football team",
+                                "id": "0"
+                            },
+                            "original_rank": 28947,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Gmina Nowe Miasto Nad Pilic\u0105",
+                                "description": "Administrative district in east-central Poland",
+                                "id": "0"
+                            },
+                            "original_rank": 100560,
+                            "new_rank": 1
+                        }
+                    ],
+                    "note": "classico plays for -> affiliated to in Yago3-10"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Abu Dhabi International Airport",
+                        "description": "Airport in UAE",
+                        "id": "0"
+                    },
+                    "relation": "is connected to",
+                    "tail": {
+                        "entity": "Tribhuvan International Airport",
+                        "description": "Airport in Nepal ",
+                        "id": "0"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Tribhuvan International Airport",
+                                "description": "Airport in Nepal ",
+                                "id": "0"
+                            },
+                            "relation": "is connected to",
+                            "tail": {
+                                "entity": "Abu Dhabi International Airport",
+                                "description": "Airport in UAE",
+                                "id": "0"
+                            }
+                        }
+                    ],
+                    "converted": [
+                        {
+                            "entity": {
+                                "entity": "Daniel Clowes",
+                                "description": "American cartoonist, graphic novelist, illustrator, and screenwriter",
+                                "id": "0"
+                            },
+                            "original_rank": 460,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Lakeland",
+                                "description": "Federal electoral district in Alberta, Canada",
+                                "id": "0"
+                            },
+                            "original_rank": 838,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Latvia National Football Team",
+                                "description": "Latvian football team",
+                                "id": "0"
+                            },
+                            "original_rank": 3597,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Gmina Radomy\u015bl Wielki",
+                                "description": "Administrative district in south-eastern Poland",
+                                "id": "0"
+                            },
+                            "original_rank": 282,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Baihakki Khaizan",
+                                "description": "Singaporean football player",
+                                "id": "0"
+                            },
+                            "original_rank": 832,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Lions For Lambs",
+                                "description": "2007 film",
+                                "id": "0"
+                            },
+                            "original_rank": 3,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Olcan Ad\u0131n",
+                                "description": "Turkish football player",
+                                "id": "0"
+                            },
+                            "original_rank": 186,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "FK Dinamo Samarqand",
+                                "description": "Uzbek football team",
+                                "id": "0"
+                            },
+                            "original_rank": 110794,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Maur\u00edcio Pequenino",
+                                "description": "Mozambican football player",
+                                "id": "0"
+                            },
+                            "original_rank": 1030,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Lake Memphremagog",
+                                "description": "Glacial lake between United States and Canada",
+                                "id": "0"
+                            },
+                            "original_rank": 1039,
+                            "new_rank": 1
+                        }
+                    ],
+                    "note": "isconnectedto \u00e8 una relazione simmetrica"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Neil Brisco",
+                        "description": "English football player",
+                        "id": "0"
+                    },
+                    "relation": "plays for",
+                    "tail": {
+                        "entity": "Northwich Victoria FC",
+                        "description": "English football team",
+                        "id": "0"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Neil Brisco",
+                                "description": "English football player",
+                                "id": "0"
+                            },
+                            "relation": "is affiliated to",
+                            "tail": {
+                                "entity": "Northwich Victoria FC",
+                                "description": "English football team",
+                                "id": "0"
+                            }
+                        }
+                    ],
+                    "converted": [
+                        {
+                            "entity": {
+                                "entity": "Barinas",
+                                "description": "Spanish municipality",
+                                "id": "0"
+                            },
+                            "original_rank": 122224,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Wallace Ford",
+                                "description": "English-American vaudevillian, stage performer and screen actor",
+                                "id": "0"
+                            },
+                            "original_rank": 93288,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "KSK Maldegem",
+                                "description": "Belgian football team",
+                                "id": "0"
+                            },
+                            "original_rank": 110589,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Minoru Suganuma",
+                                "description": "Japanese football player",
+                                "id": "0"
+                            },
+                            "original_rank": 120423,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Ha Ji-Won",
+                                "description": "South Korean actress",
+                                "id": "0"
+                            },
+                            "original_rank": 19997,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Willie Reid",
+                                "description": "Irish football player",
+                                "id": "0"
+                            },
+                            "original_rank": 85222,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Kanyakumari",
+                                "description": "Town in Kanyakumari District in the state of Tamil Nadu in India",
+                                "id": "0"
+                            },
+                            "original_rank": 122789,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "David Robertson",
+                                "description": "Scottish football player",
+                                "id": "0"
+                            },
+                            "original_rank": 12231,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Kramfors",
+                                "description": "Locality in V\u00e4sternorrland County, Sweden",
+                                "id": "0"
+                            },
+                            "original_rank": 115243,
+                            "new_rank": 1
+                        }
+                    ],
+                    "note": "solito isaffiliatedto -> playsfor di Yago3-10"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Philip Wadler",
+                        "description": "American computer scientist",
+                        "id": "0"
+                    },
+                    "relation": "works at",
+                    "tail": {
+                        "entity": "Carnegie Mellon University",
+                        "description": "Private university in Pittsburgh, Pennsylvania",
+                        "id": "0"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Philip Wadler",
+                                "description": "American computer scientist",
+                                "id": "0"
+                            },
+                            "relation": "graduated from",
+                            "tail": {
+                                "entity": "Carnegie Mellon University",
+                                "description": "Private university in Pittsburgh, Pennsylvania",
+                                "id": "0"
+                            }
+                        }
+                    ],
+                    "converted": [
+                        {
+                            "entity": {
+                                "entity": "Statesboro Georgia",
+                                "description": "County seat of Bulloch County, Georgia",
+                                "id": "0"
+                            },
+                            "original_rank": 269,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Mike Marsh",
+                                "description": "English football player",
+                                "id": "0"
+                            },
+                            "original_rank": 128,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Apure",
+                                "description": "One of the 23 states in Venezuela",
+                                "id": "0"
+                            },
+                            "original_rank": 409,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Glauchau",
+                                "description": "A town in the state of Saxony, Germany",
+                                "id": "0"
+                            },
+                            "original_rank": 20,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Distrito Federal",
+                                "description": "Type of administrative division in Brazil",
+                                "id": "0"
+                            },
+                            "original_rank": 168,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Ravid Gazal",
+                                "description": "Israeli football player",
+                                "id": "0"
+                            },
+                            "original_rank": 68,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Thomas Helveg",
+                                "description": "Danish football player",
+                                "id": "0"
+                            },
+                            "original_rank": 469,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Luhansk Oblast",
+                                "description": "Easternmost oblast (province) of Ukraine",
+                                "id": "0"
+                            },
+                            "original_rank": 1089,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Spasoje Bulaji\u010d",
+                                "description": "Slovenian football player",
+                                "id": "0"
+                            },
+                            "original_rank": 64,
+                            "new_rank": 1
+                        }
+                    ],
+                    "note": "Questo mi sembra un buon esempio di bias: controlla quante volte quando qualcuno si \u00e8 laureato in un\'universit\u00e0, poi lavora in quell\'universit\u00e0 (c\'\u00e8 anche l\'esempio di leonard_eugene_dickson worksat university_of_chicago)"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Toyah Willcox",
+                        "description": "English musician, actress, and TV presenter",
+                        "id": "0"
+                    },
+                    "relation": "wrote music for",
+                    "tail": {
+                        "entity": "Jubilee",
+                        "description": "1978 film",
+                        "id": "0"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Toyah Willcox",
+                                "description": "English musician, actress, and TV presenter",
+                                "id": "0"
+                            },
+                            "relation": "acted in",
+                            "tail": {
+                                "entity": "Jubilee",
+                                "description": "1978 film",
+                                "id": "0"
+                            }
+                        }
+                    ],
+                    "converted": [
+                        {
+                            "entity": {
+                                "entity": "Gary Williams",
+                                "description": "Footballer born 1960",
+                                "id": "0"
+                            },
+                            "original_rank": 9,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "O\u013cegs Mala\u0161enoks",
+                                "description": "Latvian football player",
+                                "id": "0"
+                            },
+                            "original_rank": 15588,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Rabat-Sal\u00e9-Zemmour-Zaer",
+                                "description": "Formerly one of the sixteen regions of Morocco (1997-2015)",
+                                "id": "0"
+                            },
+                            "original_rank": 18171,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Attila Hajdu",
+                                "description": "Hungarian football player",
+                                "id": "0"
+                            },
+                            "original_rank": 1924,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Poni Province",
+                                "description": "One of the 45 provinces of Burkina Faso",
+                                "id": "0"
+                            },
+                            "original_rank": 2008,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Alison Bechdel",
+                                "description": "American cartoonist",
+                                "id": "0"
+                            },
+                            "original_rank": 1722,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Richard Wallace",
+                                "description": "American film director",
+                                "id": "0"
+                            },
+                            "original_rank": 1720,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Gmina Krzeszyce",
+                                "description": "Administrative district in Sul\u0119cin County, in western Poland",
+                                "id": "0"
+                            },
+                            "original_rank": 2583,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Ramanaa",
+                                "description": "2002 Film",
+                                "id": "0"
+                            },
+                            "original_rank": 52701,
+                            "new_rank": 1
+                        },
+                        {
+                            "entity": {
+                                "entity": "Douglas Hunt",
+                                "description": "English football player",
+                                "id": "0"
+                            },
+                            "original_rank": 39,
+                            "new_rank": 1
+                        }
+                    ],
+                    "note": "anche qui \u00e8 un probabile bias: controlla se ogni volta che qualcuno ha scritto musica per un film ci ha anche recitato nel dataset"
+                }
+            },
+            {
+                "prediction": {
+                    "head": {
+                        "entity": "Rekha",
+                        "description": "Indian actress",
+                        "id": "0"
+                    },
+                    "relation": "has won prize",
+                    "tail": {
+                        "entity": "Filmfare Awards",
+                        "description": "Award for the Hindi-language Indian film industry",
+                        "id": "0"
+                    }
+                },
+                "explanation": {
+                    "facts": [
+                        {
+                            "head": {
+                                "entity": "Rekha",
+                                "description": "Indian actress",
+                                "id": "0"
+                            },
+                            "relation": "acted in",
+                            "tail": {
+                                "entity": "Utsav",
+                                "description": "1984 film",
+                                "id": "0"
+                            }
+                        },
+                        {
+                            "head": {
+                                "entity": "Rekha",
+                                "description": "Indian actress",
+                                "id": "0"
+                            },
+                            "relation": "acted in",
+                            "tail": {
+                                "entity": "Ganga Ki Saugandh",
+                                "description": "1978 film",
+                                "id": "0"
+                            }
+                        }
+                    ],
+                    "converted": [
+                        {
+                            "entity": {
+                                "entity": "Emperor Tenmu",
+                                "description": "The 40th emperor of Japan,",
+                                "id": "0"
+                            },
+                            "original_rank": 111,
+                            "new_rank": 1
+                        }
+                    ],
+                    "note": "Rekha \u00e8 una attrice di Bollywood e i filmfare_awards sono premi per film Hindi che Rekha ha vinto (anche se non con questi film)"
+                }
+            }
+        ]
+    }
+]
